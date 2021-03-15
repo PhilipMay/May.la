@@ -17,7 +17,7 @@
 - create repo on GitHub and clone it
 - chane into the repo directory
 - run `sphinx-quickstart` - say yes here:
-```
+```text
 You have two options for placing the build directory for Sphinx output.
 Either, you use a directory "_build" within the root path, or you separate
 "source" and "build" directories within the root path.
@@ -32,7 +32,7 @@ Either, you use a directory "_build" within the root path, or you separate
   - add it to extensions
   - turn off notebook building: `jupyter_execute_notebooks = "off"`
 - turn off `prev_next_buttons`:
-```
+```python
 html_theme_options = {
     "prev_next_buttons_location": None,
 }
