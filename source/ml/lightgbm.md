@@ -1,13 +1,11 @@
 # LightGBM
 
 ## Advantages
-
 LightGBM loads the best model after early stopping (in contrast to
 XGBoost). See here:
 <https://lightgbm.readthedocs.io/en/latest/Python-Intro.html#early-stopping>
 
 ## Hyperparameter
-
 Useful hyperopt search space:
 
 ``` python
@@ -24,7 +22,6 @@ space = {
 ```
 
 ## Links
-
   - Root Documentation:
     <https://lightgbm.readthedocs.io/en/latest/index.html>
       - Python API:
@@ -49,7 +46,6 @@ space = {
     <https://sites.google.com/view/lauraepp/parameters>
 
 ## GPU Support
-
   - Build with GPU Support: `python setup.py install --gpu
     --opencl-include-dir=/usr/local/cuda/include/
     --opencl-library=/usr/local/cuda/lib64/libOpenCL.so`
