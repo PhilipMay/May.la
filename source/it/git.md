@@ -164,12 +164,16 @@ commit text. If you want to discard all other commits you write “f” (for
 fixup) infront of them. Now you save the file and the GIT magic is
 happening.
 
-Here is an overview of all options: - p, pick = use commit - r, reword =
-use commit, but edit the commit message - e, edit = use commit, but stop
-for amending - s, squash = use commit, but meld into previous commit -
-f, fixup = like “squash”, but discard this commit’s log message - x,
-exec = run command (the rest of the line) using shell - d, drop = remove
-commit
+Here is an overview of all options:
+```
+- p, pick = use commit
+- r, reword = use commit, but edit the commit message
+- e, edit = use commit, but stop for amending
+- s, squash = use commit, but meld into previous commit
+- f, fixup = like “squash”, but discard this commit’s log message
+- x, exec = run command (the rest of the line) using shell
+- d, drop = remove commit
+```
 
 If something bad happens after saving where you have to fix up something
 first, you can continue the rebase with:
