@@ -17,7 +17,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'Eniak'
+project = 'May.la'
 copyright = 'Philip May 2021 (CC0)'
 author = 'Philip May'
 

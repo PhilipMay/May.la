@@ -1,4 +1,4 @@
-# Eniak
+# May.la
 This is Philip May's page. It is about the following topics:
 
 ```{toctree}
