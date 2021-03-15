@@ -10,5 +10,4 @@ it
 py
 ml
 linux
-win
 ```
