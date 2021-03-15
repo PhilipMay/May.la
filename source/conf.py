@@ -29,6 +29,7 @@ author = 'Philip May'
 # ones.
 extensions = [
     "sphinx_rtd_theme",
+    "myst_nb",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -52,3 +53,7 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# turn off notebook execution
+# also see https://myst-nb.readthedocs.io/en/latest/use/execute.html
+jupyter_execute_notebooks = "off"
