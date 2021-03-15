@@ -1,4 +1,4 @@
-# Duply Backup with Windows and Cygwin
+# Duply with Windows
 
 ## Installation
   - install cygwin: <https://cygwin.com/>
