@@ -46,9 +46,12 @@ experiments with docker or other stuff.
 To be able to copy and paste to and from the guest system you need a
 desktop environment like XFCE. XFCE is small compared to GNOME and the
 minimal installation does not contain LibreOffice and other stuff you do
-not need. - install `tasksel`: `sudo apt install tasksel` - execute
-`tasksel`: `sudo tasksel` - select `Xubuntu minimal installation` -
-press tabulatur and select `Ok` with return key - reboot
+not need.
+- install `tasksel`: `sudo apt install tasksel`
+- execute `tasksel`: `sudo tasksel`
+- select `Xubuntu minimal installation`
+- press tabulatur and select `Ok` with return key
+- reboot
 
 ### Install VirtualBox Guest Additions
   - `apt install build-essential dkms`
