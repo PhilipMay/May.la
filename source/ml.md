@@ -1,12 +1,8 @@
-Eniak
-=====
+# Machine Learning Topics
 
 ```{toctree}
 :glob:
 :titlesonly:
-:maxdepth: 1
 
-it
-py
-ml
+ml/*
 ```
