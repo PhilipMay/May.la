@@ -38,17 +38,17 @@ This describes how to install Ubuntu as a VirtualBox guest system to do
 experiments with docker or other stuff.
 
 ### Basic installation
-  - download a server version of Ubuntu
-  - the current LTS version might be a good idea
-  - do normal installation
+- download a server version of Ubuntu
+- the current LTS version might be a good idea
+- do normal installation
 
 ### Install XFCE
 To be able to copy and paste to and from the guest system you need a
 desktop environment like XFCE. XFCE is small compared to GNOME and the
 minimal installation does not contain LibreOffice and other stuff you do
 not need.
-- install `tasksel`: `sudo apt install tasksel`
-- execute `tasksel`: `sudo tasksel`
+- install tasksel: `sudo apt install tasksel`
+- execute tasksel: `sudo tasksel`
 - select `Xubuntu minimal installation`
 - press tabulatur and select `Ok` with return key
 - reboot
