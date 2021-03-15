@@ -2,7 +2,7 @@
 
 ## Sphinx Documentation
 - Sphinx: <https://www.sphinx-doc.org/>
-- reStructuredText (reST): https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
+- reStructuredText (reST): <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>
 
 ## Extensions and Themes
 - ABlog: <https://ablog.readthedocs.io/>
