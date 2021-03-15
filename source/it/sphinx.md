@@ -3,6 +3,8 @@
 ## Sphinx Documentation
 - Sphinx: <https://www.sphinx-doc.org/>
 - reStructuredText (reST): <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>
+- Configuration: <https://www.sphinx-doc.org/en/master/usage/configuration.html>
+- Table of Contents: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents>
 
 ## Extensions and Themes
 - ABlog: <https://ablog.readthedocs.io/>
