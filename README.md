@@ -15,3 +15,5 @@ Either, you use a directory "_build" within the root path, or you separate
 - config git with `git config pull.rebase true`
 - install https://sphinx-rtd-theme.readthedocs.io/en/latest/
 - install https://myst-nb.readthedocs.io/en/latest/
+  - add it to extensions
+  - turn off notebook building: `jupyter_execute_notebooks = "off"`
