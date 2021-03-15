@@ -17,3 +17,9 @@ Either, you use a directory "_build" within the root path, or you separate
 - install https://myst-nb.readthedocs.io/en/latest/
   - add it to extensions
   - turn off notebook building: `jupyter_execute_notebooks = "off"`
+- turn off `prev_next_buttons`
+```
+html_theme_options = {
+    "prev_next_buttons_location": None,
+}
+```
