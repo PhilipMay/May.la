@@ -212,7 +212,7 @@ git config user.name "<username>"
 Create global ignore settings that are used everywhere:
 - create `~/.gitignore_global` file with ignore settings
 - execute `git config --global core.excludesfile ~/.gitignore_global`
-- also see: https://jayeshkawli.ghost.io/using-global-gitignore-on-mac/
+- also see: <https://jayeshkawli.ghost.io/using-global-gitignore-on-mac/>
 
 ## Links
   - Pro Git book: <https://git-scm.com/book/en/>
