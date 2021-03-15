@@ -9,4 +9,6 @@ Eniak
 it
 py
 ml
+linux
+win
 ```
