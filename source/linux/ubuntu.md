@@ -61,7 +61,7 @@ press tabulatur and select `Ok` with return key - reboot
 also see here:
 <https://askubuntu.com/questions/1035030/virtualbox-guest-additions-installation-problem/1047193#1047193>
 
-# Install Docker
+## Install Docker
 To install docker do not install the package called `docker`. Docker is
 a " System tray for KDE3/GNOME2 docklet applications". The package you
 need is called `docker.io` - install with: `sudo apt install docker.io`
