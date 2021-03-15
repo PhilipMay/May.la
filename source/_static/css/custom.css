@@ -1,0 +1,16 @@
+.wy-side-nav-search {
+    background-color: #343131;
+}
+
+.wy-nav-content-wrap {
+    background: #fcfcfc;
+}
+
+footer > hr {
+    clear: both;
+    visibility: hidden;
+}
+
+.rst-content .section ol p, .rst-content .section ul p {
+    margin-bottom: 0;
+}

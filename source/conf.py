@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'Eniak'
-copyright = '2021, Philip May'
+copyright = 'Philip May 2021 (CC0)'
 author = 'Philip May'
 
 
@@ -57,3 +57,19 @@ html_static_path = ['_static']
 # turn off notebook execution
 # also see https://myst-nb.readthedocs.io/en/latest/use/execute.html
 jupyter_execute_notebooks = "off"
+
+html_theme_options = {
+    "prev_next_buttons_location": None,
+}
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/custom.css',
+]
+
+# If true, links to the reST sources are added to the pages.
+html_show_sourcelink = False
+
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+html_show_sphinx = False
