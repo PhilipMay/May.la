@@ -1,5 +1,4 @@
-Eniak
-=====
+# Eniak
 
 ```{toctree}
 :glob:
