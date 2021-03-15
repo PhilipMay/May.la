@@ -1,4 +1,5 @@
 # Eniak
+This is Philip May's page. It is about the following topics:
 
 ```{toctree}
 :glob:
