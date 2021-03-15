@@ -1,2 +1,2 @@
 # May.la
-My Sphiny Blog hostet at <https://May.la>
+My Sphiny Blog hostet at [May.la](https://May.la).
