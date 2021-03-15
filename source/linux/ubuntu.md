@@ -64,7 +64,8 @@ also see here:
 ## Install Docker
 To install docker do not install the package called `docker`. Docker is
 a " System tray for KDE3/GNOME2 docklet applications". The package you
-need is called `docker.io` - install with: `sudo apt install docker.io`
-- start with: `sudo systemctl start docker` - stop with: `sudo systemctl
-stop docker` - enable (always start at boot time) with: `sudo systemctl
-enable docker`
+need is called `docker.io`
+- install with: `sudo apt install docker.io`
+- start with: `sudo systemctl start docker`
+- stop with: `sudo systemctl stop docker`
+- enable (always start at boot time) with: `sudo systemctl enable docker`
