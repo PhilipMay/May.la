@@ -1,21 +1,31 @@
-name: Make and Deploy Sphinx
+name: Build and Deploy Sphinx
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Install
-      run: |
-        python -m pip install -U pip
-        python -m pip install -r requirements.txt black
+      - name: Install
+        run: |
+          python -m pip install -U pip
+          python -m pip install -r requirements.txt black
 
-    - name: Make
-      run: |
-        make html
+      - name: Make
+        run: |
+          make html
+
+      - name: Upload Site
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
+          FTP_SERVER: www456.your-server.de
+          FTP_USERNAME: eniaka_2
+          FTP_PASSWORD: ${{ secrets.MAY_LA_FTP_PWD }}
+          LOCAL_DIR: public
+          METHOD: sftp
+          PORT: 22
+          ARGS: --delete
