@@ -159,8 +159,8 @@ git rebase -i HEAD~5
 ```
 
 Then you get an editor window where you have to do the changes. Here you
-can rename the top commit by writing “r” (for reword) and change the
-commit text. If you want to discard all other commits you write “f” (for
+can rename the top commit by writing "r" (for reword) and change the
+commit text. If you want to discard all other commits you write "f" (for
 fixup) infront of them. Now you save the file and the GIT magic is
 happening.
 
