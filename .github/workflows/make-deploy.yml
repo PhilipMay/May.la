@@ -1,5 +1,4 @@
-name: Build and Deploy Sphinx
-
+name: Build & Deploy May.la
 on:
   push:
     branches: [ main ]
@@ -8,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
