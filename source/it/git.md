@@ -1,4 +1,6 @@
 # GIT
+- Pro Git book: <https://git-scm.com/book/en/>
+- Ry’s Git Tutorial: <https://www.smashwords.com/books/view/498426>
 
 ## Basics
 - initial checkout: `git clone <remote_repo_url>`
@@ -11,7 +13,6 @@
   - delete a local branch: `git branch -d <local_branch>`
   - delete a remote branch 'git push origin --delete <remote_branch>'
 
-
 ## Empty Commit to trigger CI
 ``` bash
 git commit --allow-empty -m "empty commit to trigger CI"
@@ -21,87 +22,66 @@ git push
 ## Stash Usage
 - stash changes: `git stash`
 - list stashed changes: `git stash list`
-- reapply stash
-  - apply newest (last) stash: `git stash apply`
-  - apply selected stash: `git stash apply <number>`
-
-Example:
+  - example:
 ``` bash
-$ git stash list
+git stash list
+# output:
 stash@{0}: WIP on master: 049d078 Create index file
 stash@{1}: WIP on master: c264051 Revert "Add file_size"
 stash@{2}: WIP on master: 21d80a5 Add number to log
 ```
+- reapply stash
+  - apply newest (last) stash: `git stash apply`
+  - apply selected stash: `git stash apply <number>`
 
-## Show History of last Ref Updates
-``` bash
-git reflog
-```
+
+## Special Commands
+- show history of last ref updates: `git reflog`
+- list tracked repositories: `git remote -v`
 
 ## Undo things
-
-### Unstage all files you have staged with git add
-``` bash
-git reset
-```
-
-### Revert all local uncommitted changes
-This should be executed in repo root:
-
-``` bash
-git checkout .
-```
-
-Yet another way to revert all uncommitted changes (longer to type, but
-works from any subdirectory):
-
-``` bash
-git reset --hard HEAD
-```
-
-### Revert pushed commit
-``` bash
-git reset --hard 'xxxxx'
+- unstage files staged with git add: `git reset`
+- revert local uncommitted changes
+  - should be executed in repo root: `git checkout .`
+  - longer to type, but works from any subdirectory: `git reset --hard HEAD`
+- revert pushed commit:
+```bash
+git reset --hard '<commit_id>'
 git clean -f -d
 git push -f
 ```
+- change last commit message: `git commit --amend`
 
-### Change last Commit
-You can change your last commit message by this command:
-
-``` bash
-git commit --amend
-```
-
-## List tracked Repositories
-``` bash
-git remote -v
-```
-
-## Updates eines Forks mergen
-Zunächst muss das Original Repository hinzugefügt werden:
-
-``` bash
-# Zunächst muss das Original Repository hinzugefügt werden:
-git remote add upstream <original_repository>
-
-# Dann fetchen:
+## Work with a forked Repository
+- add original repository: `git remote add upstream <original_repository_url>`
+- fetch changes form forked repository:
+```bash
+# fetch changes
 git fetch upstream
 
-# In den lokalen branch wechseln der akualisiert werden soll (z. B. master):
+# change to locale branch
 git checkout master
+# or
+git checkout main
 
-# und dann mergen:
+# merge upstream
 git merge upstream/master
+# or
+git merge upstream/main
 
+# push changes
 git push
-
-# If there were any new commits, rebase your development branch
+```
+- rebase changes form forked repository into development branch
+```bash
 git checkout <dev_branch>
 git rebase upstream/master
+# or
+git rebase upstream/main
+
 ```
 
-## Squash: Clean dirty commit history
+## Squash: Clean dirty commit History
 To clean a dirty commit history (before doing a pull request) you can do
 a squash.
 
@@ -109,8 +89,7 @@ Warning: Do not rebase commits that exist outside of your repository. At
 least do not rebase branches where others are working on.
 
 Lets say you want to fix up the last 5 commits you do this:
-
-``` bash
+```bash
 git rebase -i HEAD~5
 ```
 
@@ -121,7 +100,7 @@ fixup) infront of them. Now you save the file and the GIT magic is
 happening.
 
 Here is an overview of all options:
-```
+```text
 - p, pick = use commit
 - r, reword = use commit, but edit the commit message
 - e, edit = use commit, but stop for amending
@@ -132,48 +111,21 @@ Here is an overview of all options:
 ```
 
 If something bad happens after saving where you have to fix up something
-first, you can continue the rebase with:
+first, you can continue the rebase with: `git rebase --continue`
 
-``` bash
-git rebase --continue
-```
-
-When everyhing is ok you have to do a forced push:
-
-``` bash
-git push -f
-```
+When everyhing is ok you have to do a forced push: `git push -f`
 
 If you have already done a pull request (on GitHub) this squash still
 works afterwards. The “dirty” commit history of the PR will also be
 changed.
 
 ## Configuration
-
-### Remember Username and Password
-``` bash
-git config --global credential.helper store
-```
-
-### Set Username
-Set username for every repository (global)
-
-``` bash
-git config --global user.name "<username>"
-```
-
-Set username for single repository (local)
-
-``` bash
-git config user.name "<username>"
-```
-
-### Global ignore Settings
-Create global ignore settings that are used everywhere:
-- create `~/.gitignore_global` file with ignore settings
-- execute `git config --global core.excludesfile ~/.gitignore_global`
-- also see: <https://jayeshkawli.ghost.io/using-global-gitignore-on-mac/>
-
-## Links
-  - Pro Git book: <https://git-scm.com/book/en/>
-  - Ry’s Git Tutorial: <https://www.smashwords.com/books/view/498426>
+- remember username and password: `git config --global credential.helper store`
+- set username:
+- set username
+   - local (for single repository): `git config user.name "<username>"`
+   - global: `git config --global user.name "<username>"`
+- global ignore Settings
+  - create `~/.gitignore_global` file with ignore settings
+  - execute `git config --global core.excludesfile ~/.gitignore_global`
+  - also see: <https://jayeshkawli.ghost.io/using-global-gitignore-on-mac/>
