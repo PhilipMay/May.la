@@ -66,7 +66,7 @@ mkswap /mnt/swapfile
 swapon /mnt/swapfile
 ```
 
-To resume from swap see: https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file
+To resume from swap see: <https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate#Hibernation_into_swap_file>
 
 ## Select Mirrors
 ```bash
