@@ -23,3 +23,7 @@ footer > hr {
 .wy-nav-content {
     max-width: 1000px;
 }
+
+.wy-nav-top {
+    background-color: #343131;
+}
