@@ -1,5 +1,6 @@
 # Colab
-- On GitHub: <https://github.com/googlecolab/colabtools>
+- Colab: <https://colab.research.google.com/>
+- Colab on GitHub: <https://github.com/googlecolab/colabtools>
 
 ## Download Files from Colab
 ```python
@@ -17,5 +18,6 @@ uploaded = files.upload()
 ```python
 from google.colab import drive
 drive.mount('/gdrive')
+
 !ls -la /gdrive
 ```
