@@ -19,3 +19,7 @@ footer > hr {
     clear: both;
     visibility: hidden;
 }
+
+.wy-nav-content {
+    max-width: 1000px;
+}
