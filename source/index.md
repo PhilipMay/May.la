@@ -11,3 +11,5 @@ py
 ml
 linux
 ```
+
+[![Build & Deploy May.la](https://github.com/PhilipMay/May.la/actions/workflows/make-deploy.yml/badge.svg)](https://github.com/PhilipMay/May.la/actions/workflows/make-deploy.yml)
