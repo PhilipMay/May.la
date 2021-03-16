@@ -1,41 +1,16 @@
 # GIT
 
-## Initialer Checkout
-``` bash
-git clone <URI>
-```
+## Basics
+- initial checkout: `git clone <remote_repo_url>`
+- clone a specific branch: `git clone -b <branch_name> <remote_repo_url>`
 
 ## Branch handling
+- create and change Branch: `git checkout -b <new_branch_name>`
+- show all branches: `git branch -a`
+- delete branch
+  - delete a local branch: `git branch -d <local_branch>`
+  - delete a remote branch 'git push origin --delete <remote_branch>'
 
-### Branch erstellen und wechseln
-``` bash
-git checkout -b <new_branch_name>
-```
-
-### Alle Branches anzeigen
-``` bash
-git branch -a
-```
-
-### Zu Remote Branch wechseln
-``` bash
-git branch <lokaler_name> origin/<remote_name>
-git checkout <lokaler_name>
-```
-
-### Delete branch
-``` bash
-# delete a local branch
-git branch -d <the_local_branch>
-
-# remove a remote branch (if you know what you are doing)
-git push origin --delete <the_remote_branch>
-```
-
-## Clone a specific Branch in GIT
-``` bash
-git clone -b <branch_name> <remote_repo_url>
-```
 
 ## Empty Commit to trigger CI
 ``` bash
@@ -44,32 +19,13 @@ git push
 ```
 
 ## Stash Usage
-
-### Stash the Changes
-``` bash
-git stash
-```
-
-### Reapply Stash
-This applies newest (last) stash
-
-``` bash
-git stash apply
-```
-
-This applies a selected stash
-
-``` bash
-git stash apply stash@{2}
-```
-
-### List stashed Changes
-``` bash
-git stash list
-```
+- stash changes: `git stash`
+- list stashed changes: `git stash list`
+- reapply stash
+  - apply newest (last) stash: `git stash apply`
+  - apply selected stash: `git stash apply <number>`
 
 Example:
-
 ``` bash
 $ git stash list
 stash@{0}: WIP on master: 049d078 Create index file
