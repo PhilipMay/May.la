@@ -15,8 +15,7 @@ footer > hr {
     margin-bottom: 0;
 }
 
-
-a.icon.icon-home::before {
+.wy-side-nav-search > a.icon.icon-home::before {
     clear: both;
     visibility: hidden;
 }
