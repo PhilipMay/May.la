@@ -1,37 +1,35 @@
 # Ubuntu
 
 ## Package Management
+- clean cache: `apt clean`
+- list installed packages: `apt list --installed`
+- list manually installed packages: `apt-mark showmanual`
+- remove package with dependencies: `apt-get remove --auto-remove <package_name>`
 
 ### Update the System
 ``` bash
-apt update       # Fetches the list of available updates
-apt list --upgradable # see list of packages that can be upgraded
-apt upgrade      # Installs some updates; does not remove packages
-apt full-upgrade # Installs updates; may also remove some packages, if needed
-apt autoremove   # Removes any old packages that are no longer needed
-apt clean        # clean cache
+# fetch list of available updates
+apt update
+
+# list packages that can be upgraded
+apt list --upgradable
+
+# install some updates - do not remove packages
+apt upgrade
+# or
+# install updates - also remove packages if needed
+apt full-upgrade
+
+# remove any old packages no longer needed
+apt autoremove
 ```
 
-### Get Info about a .deb File
-`dpkg -I <package_name>.deb`
+### .deb Files
+- get info about a .deb file: `dpkg -I <package_name>.deb`
+- list Content of a .deb File: `dpkg -c <package_name>.deb`
 
-### List Content of a .deb File
-`dpkg -c <package_name>.deb`
-
-### List installed packages
-`apt list --installed`
-
-### List manually installed Packages
-`apt-mark showmanual`
-
-### Remove Package with dependencies
-`apt-get remove --auto-remove <package_name>`
-
-### Clean Package Cache
-`apt-get clean`
-
-## Check Ubuntu Version
-`lsb_release -a`
+### More Commands
+- vheck ubuntu version: `lsb_release -a`
 
 ## Install Ubuntu as a VirtualBox Guest
 This describes how to install Ubuntu as a VirtualBox guest system to do
@@ -54,19 +52,18 @@ not need.
 - reboot
 
 ### Install VirtualBox Guest Additions
-  - `apt install build-essential dkms`
-  - link the VirtualBox Guest Additions iso image to a cd drive
-  - cd should be auto mounted to somewhere at `/media` if XFCE or GNOME
-    is installed
-  - change to that directory and execute installation: `sudo
-    ./VBoxLinuxAdditions.run`
-
-also see here:
+- `apt install build-essential dkms`
+- link the VirtualBox Guest Additions iso image to a cd drive
+- cd should be auto mounted to somewhere at `/media` if XFCE or GNOME
+  is installed
+- change to that directory and execute installation: `sudo
+  ./VBoxLinuxAdditions.run`
+- also see here:
 <https://askubuntu.com/questions/1035030/virtualbox-guest-additions-installation-problem/1047193#1047193>
 
 ## Install Docker
 To install docker do not install the package called `docker`. Docker is
-a " System tray for KDE3/GNOME2 docklet applications". The package you
+a "System tray for KDE3/GNOME2 docklet applications". The package you
 need is called `docker.io`
 - install with: `sudo apt install docker.io`
 - start with: `sudo systemctl start docker`
