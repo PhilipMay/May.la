@@ -5,7 +5,7 @@
   - <https://www.akadia.com/services/ssh_test_certificate.html>
   - <https://devcenter.heroku.com/articles/ssl-certificate-self#generate-ssl-certificate>
 
-``` bash
+```bash
 # generate private key
 openssl genrsa -des3 -out server.pass.key 2048
 
@@ -21,7 +21,6 @@ openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 ```
 
 ## Create Client Certifcate that can be used by Firefox and other Browsers
-
-``` bash
+```bash
 openssl pkcs12 -export -in client.crt -inkey client.key -out client.p12
 ```
