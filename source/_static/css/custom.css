@@ -14,3 +14,9 @@ footer > hr {
 .rst-content .section ol p, .rst-content .section ul p {
     margin-bottom: 0;
 }
+
+
+a.icon.icon-home::before {
+    clear: both;
+    visibility: hidden;
+}
