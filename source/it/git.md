@@ -11,7 +11,7 @@
 - show all branches: `git branch -a`
 - delete branch
   - delete a local branch: `git branch -d <local_branch>`
-  - delete a remote branch 'git push origin --delete <remote_branch>'
+  - delete a remote branch `git push origin --delete <remote_branch>`
 
 ## Empty Commit to trigger CI
 ``` bash
