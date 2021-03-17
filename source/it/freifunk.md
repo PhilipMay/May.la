@@ -8,11 +8,11 @@
 - Hardware Version: 9.2
 - Gekauft: gebraucht - April 2019
 - Software: Freifunk Braunschweig installiert und eingerichtet
-- ~~Node Name: may-01~~
+- <s>Node Name: may-01</s>
 - Node Name: may-parker-01
 - Geo: 52° 13,495' N 010° 30,985' E
 - Modifikation: in outdoor Gehäuse
-- ~~Map Link: <https://freifunk-bs.de/map/#!v:m;n:14cc20702702>~~
+- <s>Map Link: <https://freifunk-bs.de/map/#!v:m;n:14cc20702702></s>
 - Map Link: <https://w.freifunk-bs.de/meshviewer/#!/14cc20702702>
 
 ## Nummer 2 - TP-Link TL-WR841N
@@ -71,11 +71,11 @@
 - Hardware Version: 4.0
 - Gekauft: gebraucht - April 2019
 - Software: Freifunk Braunschweig installiert und eingerichtet
-- ~~Node Name: may-07~~
+- <s>Node Name: may-07</s>
 - Node Name: may-parker-07
 - Geo: keine
 - Modifikation: keine
-- ~~Map Link: <https://freifunk-bs.de/map/#!v:m;n:704f57117ff7>~~
+- <s>Map Link: <https://freifunk-bs.de/map/#!v:m;n:704f57117ff7></s>
 - Map Link: <https://w.freifunk-bs.de/meshviewer/#!/704f57117ff7>
 
 ## Nummer 8 - AVM FRITZ\!Box 4020
@@ -86,7 +86,7 @@
   <https://openwrt.org/toh/avm/fritz.box.4020?s%5C#different_antenna_layouts>
 - Gekauft: gebraucht - April 2019
 - Software: Freifunk Braunschweig installiert und eingerichtet
-- ~~Node Name: may-08~~
+- <s>Node Name: may-08</s>
 - Node Name: may-parker-08
 - Konfiguration: kein Mesh-VPN
 - Geo: 52° 13,502' N 010° 30,996' E
@@ -94,7 +94,7 @@
   - Gehäuse wurde geöffnet aber wieder geschlossen
   - hintere Schrauben wurden sehr unsauber ausgebohrt
   - unten wurden "Gitterstäbe" entfernt
-- ~~Map Link: <https://freifunk-bs.de/map/#!v:m;n:5c49793fe8f4>~~
+- <s>Map Link: <https://freifunk-bs.de/map/#!v:m;n:5c49793fe8f4></s>
 - Map Link: <https://w.freifunk-bs.de/meshviewer/#!/5c49793fe8f4>
 
 ## Nummer 9 - AVM FRITZ\!Box 4020
