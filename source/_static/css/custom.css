@@ -7,7 +7,7 @@
     background: #fcfcfc;
 }
 
-.wy-side-nav-search > a.icon.icon-home::before,
+/* .wy-side-nav-search > a.icon.icon-home::before, */
 footer > hr {
     clear: both;
     visibility: hidden;
