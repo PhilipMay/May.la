@@ -1,5 +1,5 @@
 # tqdm
-https://github.com/tqdm/tqdm
+<https://github.com/tqdm/tqdm>
 
 ## Usage
 Simple usage:
