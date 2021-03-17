@@ -53,7 +53,7 @@ git push -f
 - change last commit message: `git commit --amend`
 
 ## Work with a forked Repository
-- add original repository: `git remote add upstream <original_repository_url>`
+- add original repository (has to be done once): `git remote add upstream <original_repository_url>`
 - fetch changes form forked repository:
 ```bash
 # fetch changes
