@@ -18,6 +18,8 @@ uploaded = files.upload()
 ```python
 from google.colab import drive
 drive.mount('/gdrive')
+```
 
-!ls -la /gdrive
+```bash
+ls -la /gdrive
 ```
