@@ -114,7 +114,7 @@
   - WPS und WLAN Schalter abgekniffen - siehe Foto unten
 - Map Link: <https://freifunk-bs.de/map/#!v:m;n:c80e140fbced>
 
-![](/img/passiv-poe-umbau-fritz-box-4020.jpg)
+![](/_static/img/passiv-poe-umbau-fritz-box-4020.jpg)
 
 ## Nummer 10 - TP-Link Archer C7
 - Hardware: TP-Link Archer C7
