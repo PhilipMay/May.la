@@ -7,7 +7,7 @@
   - `git log`
   - show only `n` messages: `git log -n`
   - one line format: `git log --pretty=oneline`
-   one line format and show only `n` messages: `git log --pretty=oneline -n`
+  - one line format and show only `n` messages: `git log --pretty=oneline -n`
 - initial checkout: `git clone <remote_repo_url>`
 - clone a specific branch: `git clone -b <branch_name> <remote_repo_url>`
 
