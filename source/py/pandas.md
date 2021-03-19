@@ -28,6 +28,10 @@ df = pd.read_csv(
         )
 ```
 
+## Display Data
+- count values in column (without `NaN` values): `df["<col_name>"].value_counts()`
+- count values in column (with `NaN` values): `df["<col_name>"].value_counts(dropna=True)`
+
 ## Delete Data
 - delete column inline: `df.drop('<column_name>', axis=1, inplace=True)`
 - remove rows on condition: `df.drop(df[df[<col_name>] == <condition>].index , inplace=True)`
