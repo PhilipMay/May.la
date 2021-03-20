@@ -1,4 +1,5 @@
 # Visual Studio Code
+- doc: <https://vscode.readthedocs.io/>
 
 ## Settings
   - disable minimap: `Editor -> Minimap`
