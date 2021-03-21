@@ -14,6 +14,7 @@
   * sentence1, sentence2, label
   * dev & test overlaps!
   * label: binary
+* STS benchmark: https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark
 
 ## German Sentiment
 * Model: <https://huggingface.co/oliverguhr/german-sentiment-bert>
