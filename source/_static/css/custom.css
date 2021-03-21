@@ -20,3 +20,7 @@ footer > hr {
 .wy-nav-content {
     max-width: 1000px;
 }
+
+.wy-side-nav-search > a.icon.icon-home {
+    font-size: 160%;
+}
