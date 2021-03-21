@@ -32,6 +32,14 @@ extensions = [
     "myst_nb",
 ]
 
+# add github link
+html_context = {
+  'display_github': True,
+  'github_user': 'PhilipMay',
+  'github_repo': 'May.la',
+  'github_version': 'main/source/',
+}
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
