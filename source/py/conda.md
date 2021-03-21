@@ -17,6 +17,15 @@
 - remove unused cached packages: `conda clean -a` - also see: <https://docs.conda.io/projects/conda/en/latest/commands/clean.html>
 - disable automatic base activation: `conda config --set auto_activate_base false` - also see: <https://stackoverflow.com/a/54560785/271118>
 
+## Rename Conda Environment
+Rename `<src_env>` to `<target_env>`:
+```bash
+conda create --name <target_env> --clone <src_env>
+conda remove --name <src_env> --all
+```
+
+## Installation
+
 ### Conda installation on Linux
 - download Conda (Python 3.x, Linux, 64-bit): <https://conda.io/miniconda.html>
 - make install file executable: `chmod +x Miniconda3-latest-Linux-x86_64.sh`
