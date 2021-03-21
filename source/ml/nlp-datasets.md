@@ -14,10 +14,10 @@
   * sentence1, sentence2, label
   * dev & test overlaps!
   * label: binary
-* STS benchmark: https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark
+* STS benchmark: <https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark>
 * CORD19STS
-  * Paper: https://arxiv.org/abs/2007.02461
-  * Dataset: https://gitlab.vista.isi.edu/xiaoguo/cord_19
+  * Paper: <https://arxiv.org/abs/2007.02461>
+  * Dataset: <https://gitlab.vista.isi.edu/xiaoguo/cord_19>
 
 ## German Sentiment
 * Model: <https://huggingface.co/oliverguhr/german-sentiment-bert>
