@@ -1,6 +1,10 @@
 # NLP Datasets
 * XGLUE: <https://microsoft.github.io/XGLUE/>
 * XNLI: <https://github.com/facebookresearch/XNLI>
+  * XNLI 1.0
+    * multi lang
+    * 2490 dev per lang., 5010 test per lang.
+  * XNLI-15way
 * Stanford Natural Language Inference (SNLI) Corpus: <https://nlp.stanford.edu/projects/snli/>
 * The Multi-Genre NLI Corpus: <https://cims.nyu.edu/~sbowman/multinli/>
 * PAWS: <https://github.com/google-research-datasets/paws>
