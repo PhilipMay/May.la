@@ -14,7 +14,10 @@
   * sentence1, sentence2, label
   * dev & test overlaps!
   * label: binary
-* STS benchmark: <https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark>
+* STS benchmark 
+  * Original dataset: <https://ixa2.si.ehu.eus/stswiki/index.php/STSbenchmark>
+  * STSb Multi MT: <https://github.com/PhilipMay/stsb-multi-mt>
+  * Paper: <https://arxiv.org/abs/1708.00055>
 * CORD19STS
   * Paper: <https://arxiv.org/abs/2007.02461>
   * Dataset: <https://gitlab.vista.isi.edu/xiaoguo/cord_19>
