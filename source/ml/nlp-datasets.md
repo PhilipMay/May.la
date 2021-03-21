@@ -5,6 +5,11 @@
 * The Multi-Genre NLI Corpus: <https://cims.nyu.edu/~sbowman/multinli/>
 * PAWS: <https://github.com/google-research-datasets/paws>
 * PAWS-X: <https://github.com/google-research-datasets/paws/tree/master/pawsx>
+  * lang: de, en, es, fr, ja, ko, zh
+  * 29401 train, 2000 dev, 2000 test - size can be slightly different between languages
+  * sentence1, sentence2, label
+  * dev & test overlaps!
+  * label: binary
 
 ## German Sentiment
 * Model: <https://huggingface.co/oliverguhr/german-sentiment-bert>
