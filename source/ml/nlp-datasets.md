@@ -4,7 +4,7 @@
   * XNLI 1.0
     * multi lang
     * 2490 dev per lang., 5010 test per lang.
-  * XNLI-15way
+  * XNLI-15way: 10,000 multi lingual parallel sentences without label
 * Stanford Natural Language Inference (SNLI) Corpus: <https://nlp.stanford.edu/projects/snli/>
 * The Multi-Genre NLI Corpus: <https://cims.nyu.edu/~sbowman/multinli/>
 * PAWS: <https://github.com/google-research-datasets/paws>
