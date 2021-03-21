@@ -19,7 +19,7 @@
 
 ## Rename Conda Environment
 Rename `<src_env>` to `<target_env>`:
-```bash
+```text
 conda create --name <target_env> --clone <src_env>
 conda remove --name <src_env> --all
 ```
