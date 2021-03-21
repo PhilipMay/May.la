@@ -1,0 +1,16 @@
+# NLP Datasets
+* XGLUE: <https://microsoft.github.io/XGLUE/>
+* XNLI: <https://github.com/facebookresearch/XNLI>
+* Stanford Natural Language Inference (SNLI) Corpus: <https://nlp.stanford.edu/projects/snli/>
+* The Multi-Genre NLI Corpus: <https://cims.nyu.edu/~sbowman/multinli/>
+* PAWS: <https://github.com/google-research-datasets/paws>
+* PAWS-X: <https://github.com/google-research-datasets/paws/tree/master/pawsx>
+
+## German Sentiment
+* Model: <https://huggingface.co/oliverguhr/german-sentiment-bert>
+* Paper: <http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.202.pdf>
+* GitHub: <https://github.com/oliverguhr/german-sentiment>
+* Data: <https://github.com/oliverguhr/german-sentiment/issues/3#issuecomment-700942718>
+  * <https://zenodo.org/record/3693810/>
+  * <http://www.romanklinger.de/scare/>
+* More Data: <https://github.com/WladimirSidorenko/CGSA>
