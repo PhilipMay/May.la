@@ -81,3 +81,18 @@ html_show_sourcelink = False
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 html_show_sphinx = False
+
+# Optional MyST Syntaxes
+# also see https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+myst_enable_extensions = [
+#    "amsmath",
+#    "colon_fence",
+#    "deflist",
+#    "dollarmath",
+#    "html_admonition",
+#    "html_image",
+    "linkify",
+    "replacements",
+#    "smartquotes",
+#    "substitution"
+]
