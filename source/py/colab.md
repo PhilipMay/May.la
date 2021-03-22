@@ -4,6 +4,8 @@
 
 ## Shortcuts
 - Show shortcuts: `ctrl + m, h`
+- Insert code cell above: `ctrl + m, a`
+- Insert code cell below `ctrl + m, b`
 
 ## Download Files from Colab
 ```python
