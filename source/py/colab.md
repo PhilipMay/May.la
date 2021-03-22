@@ -5,7 +5,10 @@
 ## Shortcuts
 - Show shortcuts: `ctrl + m, h`
 - Insert code cell above: `ctrl + m, a`
-- Insert code cell below `ctrl + m, b`
+- Insert code cell below: `ctrl + m, b`
+- Delete cell/selection: `ctrl + m, d`
+- Convert to code cell: `ctrl + m, y`
+- Convert to markdown cell:: `ctrl + m, m`
 
 ## Download Files from Colab
 ```python
