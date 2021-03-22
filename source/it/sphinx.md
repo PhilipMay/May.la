@@ -14,6 +14,7 @@
 - ABlog: <https://ablog.readthedocs.io/>
 - MyST - Markedly Structured Text: <https://myst-parser.readthedocs.io/>
 - MyST-NB: <https://myst-nb.readthedocs.io/>
+- markdown-it-py: https://markdown-it-py.readthedocs.io/
 - recommonmark: <https://recommonmark.readthedocs.io/>
 - Napoleon: <https://sphinxcontrib-napoleon.readthedocs.io/>
 - Read the Docs Sphinx Theme: <https://sphinx-rtd-theme.readthedocs.io/>
