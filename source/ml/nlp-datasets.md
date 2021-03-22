@@ -30,3 +30,6 @@
   * <https://zenodo.org/record/3693810/>
   * <http://www.romanklinger.de/scare/>
 * More Data: <https://github.com/WladimirSidorenko/CGSA>
+
+## More
+- https://github.com/UKPLab/sentence-transformers/issues/747#issuecomment-776993279
