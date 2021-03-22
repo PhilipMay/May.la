@@ -19,7 +19,7 @@
 - Read the Docs Sphinx Theme: <https://sphinx-rtd-theme.readthedocs.io/>
 - PyData Sphinx Theme: <https://pydata-sphinx-theme.readthedocs.io/>
 
-## eniak.de Installation
+## May.la Installation
 - create repo on GitHub and clone it
 - chane into the repo directory
 - run `sphinx-quickstart` - say yes here:
