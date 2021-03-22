@@ -2,6 +2,9 @@
 - Colab: <https://colab.research.google.com/>
 - Colab on GitHub: <https://github.com/googlecolab/colabtools>
 
+## Shortcuts
+- Show shortcuts: `ctrl + m, h`
+
 ## Download Files from Colab
 ```python
 from google.colab import files
