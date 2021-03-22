@@ -21,6 +21,7 @@ footer > hr {
     max-width: 1000px;
 }
 
+.wy-nav-top,
 .wy-side-nav-search > a.icon.icon-home {
     font-size: 160%;
 }
