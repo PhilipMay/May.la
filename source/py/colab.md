@@ -10,6 +10,9 @@
 - Convert to code cell: `ctrl + m, y`
 - Convert to markdown cell:: `ctrl + m, m`
 
+## More
+- render pandas dataframes into interactive tables: `%load_ext google.colab.data_table`
+
 ## Download Files from Colab
 ```python
 from google.colab import files
