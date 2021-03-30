@@ -14,8 +14,9 @@ linux
 
 # News about my Work
 - **March 29, 2021:** Adding the machine translated multilingual STS benchmark (STSb) dataset as a HuggingFace dataset: https://huggingface.co/datasets/stsb_multi_mt
-- **March 20, 2021:** I have published the machine translated multilingual STS benchmark (STSb) dataset under open-source license: https://github.com/PhilipMay/stsb-multi-mt
+- **March 20, 2021:** Published the machine translated multilingual STS benchmark (STSb) dataset under open-source license: https://github.com/PhilipMay/stsb-multi-mt
 - **December 1, 2020:** Together with [Philipp Reissel](https://twitter.com/phil_ipp_) from [ambeRoad](https://amberoad.de/) I gave a talk about the training and evaluation of our open-source [German Electra NLP language model](https://huggingface.co/german-nlp-group/electra-base-german-uncased). Here is the recording on YouTube: https://www.youtube.com/watch?v=cxgrTd2AQis
+- **October 24, 2020:** Published a cross-lingual model for English and German semantic sentence embeddings under open-source license: [T-Systems-onsite/cross-en-de-roberta-sentence-transformer](https://huggingface.co/T-Systems-onsite/cross-en-de-roberta-sentence-transformer)
 - **September 22, 2019:** On arXiv.org I publiched my first paper: [Improved Image Augmentation for Convolutional Neural Networks by Copyout and CopyPairing](https://arxiv.org/abs/1909.00390)
 
 ## Feedback and Questions
