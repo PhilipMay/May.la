@@ -12,6 +12,9 @@ ml
 linux
 ```
 
+# News
+- December 1, 2020: Together with [Philipp Reissel ](https://twitter.com/phil_ipp_) from [ambeRoad](https://amberoad.de/) I gave a talk about the training and evaluation of our open-source [German Electra NLP language model](https://huggingface.co/german-nlp-group/electra-base-german-uncased): https://www.youtube.com/watch?v=cxgrTd2AQis
+
 ## Feedback and Questions
 If you have questions or comments about this content please feel free to
 open a [GitHub issue](https://github.com/PhilipMay/May.la/issues/new).
