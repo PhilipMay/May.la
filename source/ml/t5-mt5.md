@@ -5,3 +5,6 @@
 - MT5
   - GitHub: https://github.com/google-research/multilingual-t5
   - Paper: https://arxiv.org/abs/2010.11934
+
+## Training with Hugging Face Transformers
+- https://github.com/huggingface/transformers/tree/master/examples/seq2seq
