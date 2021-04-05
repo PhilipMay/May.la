@@ -14,6 +14,7 @@ archive
 ```
 
 # News about My Work
+- **April 5, 2021:** Published training code for cross-lingual [sentence-transformers](https://github.com/UKPLab/sentence-transformers) models: [German-NLP-Group/xlsr](https://github.com/German-NLP-Group/xlsr)
 - **March 29, 2021:** Adding the machine translated multilingual STS benchmark (STSb) dataset called *stsb_multi_mt* as a HuggingFace dataset: https://huggingface.co/datasets/stsb_multi_mt
 - **March 20, 2021:** Published the *machine translated multilingual STS benchmark (STSb) dataset* under open-source license: https://github.com/PhilipMay/stsb-multi-mt
 - **February 22, 2021:** Together with [Philipp Reissel](https://twitter.com/phil_ipp_) from [ambeRoad](https://amberoad.de/) I released the 2nd version of our *German Electra NLP language model*. We continued the training for an additional 734,000 steps to a total of 1,500,000 steps. An extensive evaluation on the GermEval18 Coarse dataset shows that this is the best performing German language model of its size: [german-nlp-group/electra-base-german-uncased](https://huggingface.co/german-nlp-group/electra-base-german-uncased)
