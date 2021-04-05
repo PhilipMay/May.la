@@ -21,6 +21,7 @@ archive
 - **October 24, 2020:** Published a *cross-lingual model for English and German semantic sentence embeddings* under open-source license: [T-Systems-onsite/cross-en-de-roberta-sentence-transformer](https://huggingface.co/T-Systems-onsite/cross-en-de-roberta-sentence-transformer)
 - **August 18, 2020:** Together with [Philipp Reissel](https://twitter.com/phil_ipp_) from [ambeRoad](https://amberoad.de/) I released a new open-source *German Electra NLP language model*: [german-nlp-group/electra-base-german-uncased](https://huggingface.co/german-nlp-group/electra-base-german-uncased)
 - **September 22, 2019:** On arXiv.org I publiched my first paper: [Improved Image Augmentation for Convolutional Neural Networks by Copyout and CopyPairing](https://arxiv.org/abs/1909.00390)
+- **September 9, 2018:** Started to maintain the [conda-forge](https://conda-forge.org/) hyperopt package: https://github.com/conda-forge/hyperopt-feedstock
 
 ## Feedback and Questions
 If you have questions or comments about this content please feel free to
