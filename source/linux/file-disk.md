@@ -1,9 +1,9 @@
 # File & Disk Tools
 
-## Remove all Comments from File
-```bash
-sed -e '/^#/d' <file>
-```
+# Remove Things
+- remove all comments from file: `sed -e '/^#/d' <input_file> > <output_file>`
+- remove all blank lines from file: `awk '!/^$/' <input_file> > <output_file>`
+
 
 ## Split a File
 This will not split single lines:
