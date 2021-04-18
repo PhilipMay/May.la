@@ -14,7 +14,7 @@ archive
 ```
 
 # News about My Work
-- **April 18, 2021:** *German NLP Group* releases [The German colossal, cleaned Common Crawl corpus (GC4)](https://german-nlp-group.github.io/projects/gc4-corpus.html). A preprocessed (450 GB zipped) German text corpus based on [Common Crawl](https://commoncrawl.org/). Many thanks to [iisys](https://www.iisys.de/) (the Institute of Information Systems Hof University) for hosting this dataset.
+- **April 18, 2021:** *German NLP Group* releases [The German colossal, cleaned Common Crawl Corpus (GC4 Corpus)](https://german-nlp-group.github.io/projects/gc4-corpus.html). A preprocessed (450 GB zipped) German text corpus based on [Common Crawl](https://commoncrawl.org/). Many thanks to [iisys](https://www.iisys.de/) (the Institute of Information Systems Hof University) for hosting this dataset.
 - **April 5, 2021:** Published training code for cross-lingual [sentence-transformers](https://github.com/UKPLab/sentence-transformers) models: [German-NLP-Group/xlsr](https://github.com/German-NLP-Group/xlsr)
 - **March 29, 2021:** Adding the machine translated multilingual STS benchmark (STSb) dataset called *stsb_multi_mt* as a HuggingFace dataset: https://huggingface.co/datasets/stsb_multi_mt
 - **March 21, 2021:** Started website for *German NLP Group* as a GitHub Page: https://german-nlp-group.github.io/
