@@ -14,10 +14,10 @@ archive
 ```
 
 # News about My Work
-- **April 18, 2021:** German NLP Group releases [The German colossal, cleaned Common Crawl corpus (GC4)](https://german-nlp-group.github.io/projects/gc4-corpus.html). A preprocessed (450 GB zipped) German text corpus based on [Common Crawl](https://commoncrawl.org/). Many thanks to [iisys](https://www.iisys.de/) (the Institute of Information Systems Hof University) for hosting this dataset.
+- **April 18, 2021:** *German NLP Group* releases [The German colossal, cleaned Common Crawl corpus (GC4)](https://german-nlp-group.github.io/projects/gc4-corpus.html). A preprocessed (450 GB zipped) German text corpus based on [Common Crawl](https://commoncrawl.org/). Many thanks to [iisys](https://www.iisys.de/) (the Institute of Information Systems Hof University) for hosting this dataset.
 - **April 5, 2021:** Published training code for cross-lingual [sentence-transformers](https://github.com/UKPLab/sentence-transformers) models: [German-NLP-Group/xlsr](https://github.com/German-NLP-Group/xlsr)
 - **March 29, 2021:** Adding the machine translated multilingual STS benchmark (STSb) dataset called *stsb_multi_mt* as a HuggingFace dataset: https://huggingface.co/datasets/stsb_multi_mt
-- **March 21, 2021:** Started website for German NLP Group as a GitHub Page: https://german-nlp-group.github.io/
+- **March 21, 2021:** Started website for *German NLP Group* as a GitHub Page: https://german-nlp-group.github.io/
 - **March 20, 2021:** Published the *machine translated multilingual STS benchmark (STSb) dataset* under open-source license: [PhilipMay/stsb-multi-mt](https://github.com/PhilipMay/stsb-multi-mt)
 - **February 22, 2021:** Together with [Philipp Reissel](https://twitter.com/phil_ipp_) from [ambeRoad](https://amberoad.de/) I released the 2nd version of our *German Electra NLP language model*. Training is continued for an additional 734,000 steps to a total of 1,500,000 steps. An extensive evaluation on the GermEval18 Coarse dataset shows that this is the best performing German language model of its size: [german-nlp-group/electra-base-german-uncased](https://huggingface.co/german-nlp-group/electra-base-german-uncased)
 - **December 1, 2020:** Together with [Philipp Reissel](https://twitter.com/phil_ipp_) from [ambeRoad](https://amberoad.de/) I gave a talk about the training and evaluation of our open-source [German Electra NLP language model](https://huggingface.co/german-nlp-group/electra-base-german-uncased). Here is the recording on YouTube: https://www.youtube.com/watch?v=cxgrTd2AQis
