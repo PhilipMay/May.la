@@ -20,6 +20,12 @@
 - Read the Docs Sphinx Theme: <https://sphinx-rtd-theme.readthedocs.io/>
 - PyData Sphinx Theme: <https://pydata-sphinx-theme.readthedocs.io/>
 
+## MyST Syntax
+- add a link to a locale PDF or other file
+```markdown
+{download}`text <_static/reference.pdf>`
+```
+
 ## May.la Installation
 - create repo on GitHub and clone it
 - chane into the repo directory
