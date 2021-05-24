@@ -21,7 +21,7 @@
 - PyData Sphinx Theme: <https://pydata-sphinx-theme.readthedocs.io/>
 
 ## MyST Syntax
-- add a link to a locale PDF or other file
+- add a link to a locale PDF or other file - [source](https://github.com/executablebooks/MyST-Parser/issues/341)
 ```markdown
 {download}`text <_static/reference.pdf>`
 ```
