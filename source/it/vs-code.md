@@ -10,5 +10,5 @@
 - debug all code - not just your own: `Extensions -> Python -> Debug Just My Code`
 - change font: Editor: `Font Family -> prepend "'Source Code Pro', "` for example
 - change textsize of UI: `Window: Zoom Level`
-- show modifies settings: `open settings -> click "..." (top right) -> select "Show modifies settings"`
 - auto save: `Text Editor -> Files -> Auto Save -> "onFocusChange"`
+- show modified settings: `open settings -> click "..." (top right) -> select "Show modifies settings"`
