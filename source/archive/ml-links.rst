@@ -37,7 +37,6 @@ Natural Language Processing (NLP)
 
 -  `Training of German Word Embedding for NLP <Training of German Word Embedding for NLP>`__
 -  `Creating a big German Dataset as a Reference for NLP Experiments <Creating a big German Dataset as a Reference for NLP Experiments>`__
--  :doc:`fastText </ml/fasttext>`
 
 Tools / Libs
 ------------
@@ -53,9 +52,6 @@ Tools / Libs
    https://joblib.readthedocs.io/en/latest/
 -  DESlib - ensemble learning library:
    https://deslib.readthedocs.io/en/latest/
--  :doc:`SHAP (SHapley Additive exPlanations) </ml/shap>`
 -  Trees and Boosting
 
-   -  :doc:`XGBoost </ml/xgboost>`
-   -  :doc:`LightGBM </ml/lightgbm>`
    -  https://catboost.ai/
