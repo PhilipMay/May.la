@@ -12,3 +12,13 @@
 - change textsize of UI: `Window: Zoom Level`
 - auto save: `Text Editor -> Files -> Auto Save -> "onFocusChange"`
 - show modified settings: `open settings -> click "..." (top right) -> select "Show modifies settings"`
+
+## Extensions
+- Python specific
+  - Python: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+  - Pylance: https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance
+  - Python Test Explorer for Visual Studio Code: https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter
+  - Python Docstring Generator: https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring
+  - Jupyter: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+- Visual Studio IntelliCode: https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode
+- Bookmarks: https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
