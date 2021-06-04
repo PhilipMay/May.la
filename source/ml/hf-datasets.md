@@ -1,4 +1,4 @@
-# Hugging Face Datasets
+# Hugging Face - Datasets
 - Doc: https://huggingface.co/docs/datasets/
 - GitHub: https://github.com/huggingface/datasets
 - [Writing a dataset loading script](https://huggingface.co/docs/datasets/add_dataset.html)
