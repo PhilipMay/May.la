@@ -24,3 +24,6 @@ echo -e "import os\n\nos.environ[\"SOME_URL\"] = \"http://mlflow.company.tld:500
 - Guide: https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#running-a-public-notebook-server
 - Password hash generation: https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password
 - Certificate generation: https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#using-ssl-for-encrypted-communication
+
+## Clean the Trash
+When you use the "File Browser" of Jupyter Lab to delete files they are not deleted but moved to `~/.local/share/Trash`. Clean that folder to delete them.
