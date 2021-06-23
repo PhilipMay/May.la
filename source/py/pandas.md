@@ -33,7 +33,9 @@ df = pd.read_csv(
 - count values in column (with `NaN` values): `df["<col_name>"].value_counts(dropna=True)`
 
 ## Delete Data
-- delete column inline: `df.drop('<column_name>', axis=1, inplace=True)`
+- delete column inline
+  - `df.drop('<column_name>', axis=1, inplace=True)`
+  - `<column_name>` can also be a list of `str`
 - remove rows on condition: `df.drop(df[df[<col_name>] == <condition>].index , inplace=True)`
 - remove duplicates
   - keep first (inplace): `df.drop_duplicates(inplace=True, keep='first')`
