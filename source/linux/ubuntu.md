@@ -28,7 +28,10 @@ apt autoremove
 - get info about a .deb file: `dpkg -I <package_name>.deb`
 - list Content of a .deb File: `dpkg -c <package_name>.deb`
 
-### More Commands
+## Configuration
+- Proxy settings for all users in `/etc/environment` - also see https://www.serverlab.ca/tutorials/linux/administration-linux/how-to-configure-proxy-on-ubuntu-18-04/
+
+## Commands
 - vheck ubuntu version: `lsb_release -a`
 
 ## Install Ubuntu as a VirtualBox Guest
