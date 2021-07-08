@@ -4,11 +4,11 @@
 ## Types
 - `Any`: Special type indicating an unconstrained type.  
 - `Optional`: Optional type.
-- Dict
-  - Dict[str, int]
-  - Dict[str, List[int]]
-- Callable
-  - Callable[[str], Dict[str, List[int]]]
+- `Dict`
+  - `Dict[str, int]`
+  - `Dict[str, List[int]]`
+- `Callable`
+  - `Callable[[str], Dict[str, List[int]]]`
 
 ## Example
 
