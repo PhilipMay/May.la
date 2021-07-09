@@ -77,13 +77,29 @@ git merge upstream/main
 # push changes
 git push
 ```
-- rebase changes form forked repository into development branch
+
+Rebase changes form forked repository into development branch:
 ```bash
 git checkout <dev_branch>
 git rebase upstream/master
 # or
 git rebase upstream/main
+```
 
+Rebase into development branch:
+```bash
+git checkout <dev_branch>
+git rebase master
+# or
+git rebase main
+```
+
+Conflicts look like this:
+```text
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
 ```
 
 ## Squash: Clean dirty commit History
