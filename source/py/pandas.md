@@ -36,7 +36,7 @@ df = pd.read_csv(
 - delete column inline
   - `df.drop('<column_name>', axis=1, inplace=True)`
   - `<column_name>` can also be a list of `str`
-- remove rows on condition: `df.drop(df[df[<col_name>] == <condition>].index , inplace=True)`
+- remove rows on condition: `df.drop(df[df[<col_name>] == <condition>].index, inplace=True)`
 - remove duplicates
   - keep first (inplace): `df.drop_duplicates(inplace=True, keep='first')`
   - only consider certain columns to identify duplicates, keep first (inplace): `df.drop_duplicates(<list_of_cols>, inplace=True, keep='first')`
