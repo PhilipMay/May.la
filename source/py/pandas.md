@@ -31,7 +31,7 @@ df = pd.read_csv(
 
 ## Display Data
 - count values in column (without `NaN` values): `df["col_name"].value_counts()`
-- count values in column (with `NaN` values): `df["col_name"].value_counts(dropna=True)`
+- count values in column (with `NaN` values): `df["col_name"].value_counts(dropna=False)`
 
 ## Delete Data
 - delete column inline
