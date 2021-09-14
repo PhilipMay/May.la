@@ -9,42 +9,42 @@
 
 ## Create Dataframe
 ```python
-data = {'col1': [1, 2], 'col2': [3, 4]}
+data = {"col1": [1, 2], "col2": [3, 4]}
 df = pd.DataFrame(data=data)
 ```
 
 ## Load and Save
-- save to CSV: `df.to_csv(<path_or_buffer>)`
-- save to CSV (Without row names / index): `df.to_csv(<path_or_buffer>, index=False)`
+- save to CSV: `df.to_csv("path_or_buffer")`
+- save to CSV (without row names / index): `df.to_csv("path_or_buffer", index=False)`
 - load from CSV:
 ```python
 df = pd.read_csv(
-        <path_or_buffer>,
-        sep=';',
-        encoding='us-ascii',
-        usecols=<col_list>,
-        nrows=<number_of_rows_to_read>,
-        low_memory=False,
-        )
+    "path_or_buffer",
+    sep=";",
+    encoding="us-ascii",
+    usecols=col_list,
+    nrows=number_of_rows_to_read,
+    low_memory=False,
+)
 ```
 
 ## Display Data
-- count values in column (without `NaN` values): `df["<col_name>"].value_counts()`
-- count values in column (with `NaN` values): `df["<col_name>"].value_counts(dropna=True)`
+- count values in column (without `NaN` values): `df["col_name"].value_counts()`
+- count values in column (with `NaN` values): `df["col_name"].value_counts(dropna=True)`
 
 ## Delete Data
 - delete column inline
-  - `df.drop('<column_name>', axis=1, inplace=True)`
-  - `<column_name>` can also be a list of `str`
-- remove rows on condition: `df.drop(df[df[<col_name>] == <condition>].index, inplace=True)`
+  - `df.drop("column_name", axis=1, inplace=True)`
+  - `column_name` can also be a list of `str`
+- remove rows on condition: `df.drop(df[df["col_name"] == condition].index, inplace=True)`
 - remove duplicates
-  - keep first (inplace): `df.drop_duplicates(inplace=True, keep='first')`
-  - only consider certain columns to identify duplicates, keep first (inplace): `df.drop_duplicates(<list_of_cols>, inplace=True, keep='first')`
+  - keep first (inplace): `df.drop_duplicates(inplace=True, keep="first")`
+  - only consider certain columns to identify duplicates, keep first (inplace): `df.drop_duplicates(list_of_cols, inplace=True, keep="first")`
 
 ## Modify Data
 - sort Data
-  - low to high values: `df.sort_values('<column_name>', inplace=True)`
-  - high to low values: `df.sort_values('<column_name>', ascending=False, inplace=True)`
+  - low to high values: `df.sort_values("column_name", inplace=True)`
+  - high to low values: `df.sort_values("column_name", ascending=False, inplace=True)`
 
 ## Combine Data
 
@@ -58,9 +58,9 @@ df = pd.concat([df_01, df_02], ignore_index=True)
 ## Display Settings
 Examples for display settings:
 ```python
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_colwidth', None)
+pd.set_option("display.max_rows", None)
+pd.set_option("display.max_columns", None)
+pd.set_option("display.max_colwidth", None)
 ```
 
 ## Filter nan Values
@@ -68,9 +68,9 @@ pd.set_option('display.max_colwidth', None)
 check for `nan`-values. Use `pd.isnull(obj : scalar or array-like)`
 instead or `isnull()`. Examples:
 ```python
-df.loc[pd.isnull(df['col'])]
-df[df['col'].isnull()]
+df.loc[pd.isnull(df["col"])]
+df[df["col"].isnull()]
 ```
 
 ## Other
-- rename columns: `df.rename(columns={'A': 'x'}, inplace=True)`
+- rename columns: `df.rename(columns={"a": "x"}, inplace=True)`
