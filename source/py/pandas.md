@@ -25,6 +25,7 @@ df = pd.read_csv(
     usecols=col_list,
     nrows=number_of_rows_to_read,
     low_memory=False,
+    quoting=csv.QUOTE_NONE,
 )
 ```
 
