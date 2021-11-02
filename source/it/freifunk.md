@@ -1,7 +1,7 @@
 # Freifunk
 - Parker
   - <https://freifunk-bs.de/parker.html>
-  - <https://w.freifunk-bs.de/map/#!/de/map>
+  - <https://w.freifunk-bs.de/map/>
 
 ## Nummer 1 - TP-Link TL-WR841N
 - Hardware: TP-Link TL-WR841N
