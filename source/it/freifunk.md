@@ -1,7 +1,7 @@
 # Freifunk
 - Parker
   - <https://freifunk-bs.de/parker.html>
-  - <https://w.freifunk-bs.de/meshviewer/>
+  - <https://w.freifunk-bs.de/map/#!/de/map>
 
 ## Nummer 1 - TP-Link TL-WR841N
 - Hardware: TP-Link TL-WR841N
@@ -13,7 +13,8 @@
 - Geo: 52° 13,495' N 010° 30,985' E
 - Modifikation: in outdoor Gehäuse
 - <s>Map Link: <https://freifunk-bs.de/map/#!v:m;n:14cc20702702></s>
-- Map Link: <https://w.freifunk-bs.de/meshviewer/#!/14cc20702702>
+- <s>Map Link: <https://w.freifunk-bs.de/meshviewer/#!/14cc20702702></s>
+- Map Link: <https://w.freifunk-bs.de/map/#!/de/map/14cc20702702>
 
 ## Nummer 2 - TP-Link TL-WR841N
 - Hardware: TP-Link TL-WR841N
@@ -76,7 +77,8 @@
 - Geo: keine
 - Modifikation: keine
 - <s>Map Link: <https://freifunk-bs.de/map/#!v:m;n:704f57117ff7></s>
-- Map Link: <https://w.freifunk-bs.de/meshviewer/#!/704f57117ff7>
+- <s>Map Link: <https://w.freifunk-bs.de/meshviewer/#!/704f57117ff7></s>
+- Map Link: <https://w.freifunk-bs.de/map/#!/de/map/704f57117ff7>
 
 ## Nummer 8 - AVM FRITZ\!Box 4020
 - Hardware: AVM FRITZ\!Box 4020
@@ -95,8 +97,9 @@
   - hintere Schrauben wurden sehr unsauber ausgebohrt
   - unten wurden "Gitterstäbe" entfernt
 - <s>Map Link: <https://freifunk-bs.de/map/#!v:m;n:5c49793fe8f4></s>
-- Map Link: <https://w.freifunk-bs.de/meshviewer/#!/5c49793fe8f4>
-
+- <s>Map Link: <https://w.freifunk-bs.de/meshviewer/#!/5c49793fe8f4></s>
+- Map Link: <https://w.freifunk-bs.de/map/#!/de/map/5c49793fe8f4>
+ 
 ## Nummer 9 - AVM FRITZ\!Box 4020
 - Hardware: AVM FRITZ\!Box 4020
 - Hardware Version: -
