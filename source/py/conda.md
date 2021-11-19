@@ -2,7 +2,7 @@
 
 ## Manage Environments
 - create environment: `conda create --name <new_env_name>`
-- create environment with python 3.8: `conda create --name <new_env_name> python=3.9`
+- create environment with python 3.9: `conda create --name <new_env_name> python=3.9`
 - activate environment: `conda activate <env_name>`
 - deactivate (leave) environment: `conda deactivate`
 - list available environments: `conda info --envs`
