@@ -1,5 +1,17 @@
 # SSH
 
+## config File
+
+### Default config
+The default config looks like this
+```bash
+Host <hostname> <ip>
+   HostName <ip>
+   User <username>
+   IdentitiesOnly yes
+   IdentityFile ~/.ssh/<sec_key_filename>
+```
+
 ## SSH Tunnel
 - <https://www.ssh.com/ssh/tunneling>
 - <https://wiki.archlinux.org/index.php/HTTP_tunneling>
