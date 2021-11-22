@@ -18,7 +18,8 @@ If you have a jump server <jump_server_hostname> write a normal confir for both 
 ### Connect through HTTP proxy
 For Linux add this:
 ```text
-...
+   ProxyCommand nc -X connect -x <proxy_ip>:<proxy_port> %h %p
+   ForwardAgent yes
 ```
 
 For Windows (git bash) add this:
