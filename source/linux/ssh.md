@@ -4,7 +4,7 @@
 
 ### Default config
 The default config looks like this
-```bash
+```text
 Host <hostname> <ip>
    HostName <ip>
    User <username>
@@ -14,6 +14,18 @@ Host <hostname> <ip>
 
 ### Using a Jump Server
 If you have a jump server <jump_server_hostname> write a normal confir for both servers and add this to the config of the target server: `ProxyJump <jump_server_hostname>`
+
+### Connect through HTTP proxy
+For Linux add this:
+```text
+...
+```
+
+For Windows (git bash) add this:
+```text
+   ProxyCommand connect -H <proxy_ip>:<proxy_port> %h %p
+   ForwardAgent yes
+```
 
 ## SSH Tunnel
 - <https://www.ssh.com/ssh/tunneling>
