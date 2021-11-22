@@ -12,6 +12,9 @@ Host <hostname> <ip>
    IdentityFile ~/.ssh/<sec_key_filename>
 ```
 
+### Using a Jump Server
+If you have a jump server <jump_server_hostname> you can add this to the config of the target server: `ProxyJump <jump_server_hostname>`
+
 ## SSH Tunnel
 - <https://www.ssh.com/ssh/tunneling>
 - <https://wiki.archlinux.org/index.php/HTTP_tunneling>
