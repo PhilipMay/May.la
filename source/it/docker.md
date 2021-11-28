@@ -19,3 +19,4 @@
 - stop
   - stop and remove containers: `docker-compose down` - [docker-compose down](https://docs.docker.com/compose/reference/down/)
   - stop and remove containers and volumes: `docker-compose down -v` - [docker-compose down](https://docs.docker.com/compose/reference/down/)
+- validate and view compose file: `docker-compose config` [docker-compose config](https://docs.docker.com/compose/reference/config/)
