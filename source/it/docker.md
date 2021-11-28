@@ -2,7 +2,7 @@
 - build: `docker build . -t <tag_name>`
 - connect to a container: `docker exec -it <container_name> bash`
 - delete
-  - delete all volumes: `docker volume rm $(docker volume ls -q)`
+  - delete all volumes: `docker volume rm $(docker volume ls -q)` - [docker volume rm](https://docs.docker.com/engine/reference/commandline/volume_rm/) - [docker volume ls](https://docs.docker.com/engine/reference/commandline/volume_ls/)
   - delete all: `docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q)`
 - list containers - [docker ps](https://docs.docker.com/engine/reference/commandline/ps/)
   - list running containers: `docker ps`
