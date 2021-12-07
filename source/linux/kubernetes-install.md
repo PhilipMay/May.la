@@ -111,9 +111,12 @@ kubectl apply -f calico.yaml
 ```
 
 ## Fix unhealthy scheduler
-When you execute `kubectl get cs` this is the output:
+When you execute `kubectl get cs` you see that scheduler is unhealthy. This is the output:
 ```text
-TODO
+NAME                 STATUS      MESSAGE                                                                                       ERROR
+scheduler            Unhealthy   Get "http://127.0.0.1:10251/healthz": dial tcp 127.0.0.1:10251: connect: connection refused   
+controller-manager   Healthy     ok                                                                                            
+etcd-0               Healthy     {"health":"true","reason":""} 
 ```
 
 To fix this (see https://stackoverflow.com/a/66635130/271118) edit `/etc/kubernetes/manifests/kube-scheduler.yaml` and remove (or add `#` in front of) `- --port=0` at the location "spec -> containers -> command -> kube-scheduler".
