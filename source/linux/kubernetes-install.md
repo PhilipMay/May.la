@@ -152,4 +152,8 @@ Dec 07 08:33:00 master1 kubelet[8864]: E1207 08:33:00.498572    8864 kubelet.go:
 [...9
 ```
 
+containerd seems to complain about apparmor: `error="failed to create containerd container: get apparmor_parser version: exec: \"apparmor_parser\": executable file not found in $PATH"`
+
+I did try: `apt install apparmor apparmor-utils`
+
 Why is the CNI plugin not installed?!
