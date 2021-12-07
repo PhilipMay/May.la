@@ -99,6 +99,15 @@ see
 kubeadm init --pod-network-cidr=192.168.0.0/16
 ```
 
+## Install Calico
+- see https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises#install-calico-with-kubernetes-api-datastore-50-nodes-or-less
+
+```text
+curl https://docs.projectcalico.org/manifests/calico.yaml -O
+
+kubectl apply -f calico.yaml
+```
+
 ## Error
 Now I am getting this error:
 ```text
