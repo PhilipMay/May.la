@@ -119,7 +119,7 @@ controller-manager   Healthy     ok
 etcd-0               Healthy     {"health":"true","reason":""} 
 ```
 
-To fix this (see https://stackoverflow.com/a/66635130/271118) edit `/etc/kubernetes/manifests/kube-scheduler.yaml` and remove (or add `#` in front of) `- --port=0` at the location "spec -> containers -> command -> kube-scheduler".
+To fix this (see https://stackoverflow.com/a/66635130/271118) edit `/etc/kubernetes/manifests/kube-scheduler.yaml` and remove (or add `#` in front of) `- --port=0` at the location "spec -> containers -> command -> kube-scheduler". After that restart the kubelet service: `systemctl restart kubelet.service`
 
 ## Error when apparmor is missing
 Now I am getting this error:
