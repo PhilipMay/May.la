@@ -138,4 +138,18 @@ To see the stack trace of this error execute with --v=5 or higher
 [...] containerd[4018]: time="2021-12-07T08:02:36.964061674Z" level=error msg="failed to load cni during init, please check CRI plugin status before setting up network for pods" error="cni config load failed: no network config found in /etc/cni/net.d: cni plugin not initialized: failed to load cni config"
 ```
 
+`journalctl -xeu kubelet` provides this:
+```text
+Dec 07 08:32:57 master1 kubelet[8864]: E1207 08:32:57.747558    8864 kubelet_node_status.go:93] "Unable to register node with API server" err="Post \"https://159.69.24.59:6443/api/v1/nodes\": dial tcp 159.69.24>
+Dec 07 08:32:57 master1 kubelet[8864]: E1207 08:32:57.777954    8864 kubelet.go:2412] "Error getting node" err="node \"master1\" not found"
+Dec 07 08:32:57 master1 kubelet[8864]: E1207 08:32:57.878672    8864 kubelet.go:2412] "Error getting node" err="node \"master1\" not found"
+Dec 07 08:32:57 master1 kubelet[8864]: E1207 08:32:57.979180    8864 kubelet.go:2412] "Error getting node" err="node \"master1\" not found"
+[...]
+Dec 07 08:33:00 master1 kubelet[8864]: E1207 08:33:00.217568    8864 kubelet.go:2337] "Container runtime network not ready" networkReady="NetworkReady=false reason:NetworkPluginNotReady message:Network plugin r>
+Dec 07 08:33:00 master1 kubelet[8864]: E1207 08:33:00.297172    8864 kubelet.go:2412] "Error getting node" err="node \"master1\" not found"
+Dec 07 08:33:00 master1 kubelet[8864]: E1207 08:33:00.398036    8864 kubelet.go:2412] "Error getting node" err="node \"master1\" not found"
+Dec 07 08:33:00 master1 kubelet[8864]: E1207 08:33:00.498572    8864 kubelet.go:2412] "Error getting node" err="node \"master1\" not found"
+[...9
+```
+
 Why is the CNI plugin not installed?!
