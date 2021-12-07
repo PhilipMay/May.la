@@ -110,7 +110,15 @@ curl https://docs.projectcalico.org/manifests/calico.yaml -O
 kubectl apply -f calico.yaml
 ```
 
-## Error
+## Fix unhealthy scheduler
+When you execute `kubectl get cs` this is the output:
+```text
+TODO
+```
+
+To fix this (see https://stackoverflow.com/a/66635130/271118) edit `/etc/kubernetes/manifests/kube-scheduler.yaml` and remove (or add `#` in front of) `- --port=0` at the location "spec -> containers -> command -> kube-scheduler".
+
+## Error when apparmor is missing
 Now I am getting this error:
 ```text
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
