@@ -54,5 +54,11 @@ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev
 apt-get update
 
 apt-get install containerd.io
+
+mkdir -p /etc/containerd
+
+containerd config default > /etc/containerd/config.toml
+
+systemctl restart containerd
 ```
 
