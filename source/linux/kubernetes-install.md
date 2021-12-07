@@ -62,9 +62,18 @@ containerd config default > /etc/containerd/config.toml
 systemctl restart containerd
 ```
 
-skiped this step: https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd-systemd
+- see: https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd-systemd
+- edit `/etc/containerd/config.toml`
+- add the following last line below the first line:
 
-reboot
+```text
+  [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+    SystemdCgroup = true
+```
+
+- restart containerd: `systemctl restart containerd`
+
+I did a reboot here - just to be sure
 
 see https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl
 ```bash
@@ -81,4 +90,11 @@ apt-get update
 apt-get install -y kubelet kubeadm kubectl
 
 apt-mark hold kubelet kubeadm kubectl
+```
+
+see 
+- https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node
+- https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart#create-a-single-host-kubernetes-cluster
+```bash
+kubeadm init --pod-network-cidr=192.168.0.0/16
 ```
