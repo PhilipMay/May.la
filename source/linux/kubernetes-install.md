@@ -64,7 +64,7 @@ systemctl restart containerd
 
 - see: https://kubernetes.io/docs/setup/production-environment/container-runtimes/#containerd-systemd
 - edit `/etc/containerd/config.toml`
-- add the following last line below the first line:
+- add the 2nd last line below 1st line:
 
 ```text
   [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
