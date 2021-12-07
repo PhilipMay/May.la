@@ -156,4 +156,6 @@ containerd seems to complain about apparmor: `error="failed to create containerd
 
 I did try: `apt install apparmor apparmor-utils`
 
+Later saw that `apt install apparmor` is enough.
+
 Why is the CNI plugin not installed?!
