@@ -53,6 +53,8 @@ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev
 
 apt-get update
 
+apt install apparmor
+
 apt-get install containerd.io
 
 mkdir -p /etc/containerd
