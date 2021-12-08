@@ -96,7 +96,7 @@ see
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node
 - https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart#create-a-single-host-kubernetes-cluster
 ```bash
-kubeadm init --pod-network-cidr=192.168.0.0/16
+kubeadm init --pod-network-cidr=192.168.0.0/16 --control-plane-endpoint=159.69.24.59
 
 export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
