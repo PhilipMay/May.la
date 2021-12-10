@@ -183,3 +183,6 @@ I did try: `apt install apparmor apparmor-utils`
 Later saw that `apt install apparmor` is enough.
 
 Why is the CNI plugin not installed?!
+
+## Next Steps
+- install helm: https://helm.sh/docs/intro/install/#from-apt-debianubuntu
