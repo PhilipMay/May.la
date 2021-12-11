@@ -186,3 +186,5 @@ Why is the CNI plugin not installed?!
 
 ## Next Steps
 - install helm: https://helm.sh/docs/intro/install/#from-apt-debianubuntu
+- install traefik: https://doc.traefik.io/traefik/getting-started/install-traefik/#use-the-helm-chart
+  - `helm install traefik traefik/traefik -n traefik --create-namespace` 
