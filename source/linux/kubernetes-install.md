@@ -184,6 +184,11 @@ Later saw that `apt install apparmor` is enough.
 
 Why is the CNI plugin not installed?!
 
+## Network Debug
+- see open ports and more:
+  - `lsof -i -P -n | grep LISTEN`
+  - `lsof -i -P -n | grep kubectl`
+
 ## Next Steps
 - untaint master: `kubectl taint nodes --all node-role.kubernetes.io/master-`
 - install helm: https://helm.sh/docs/intro/install/#from-apt-debianubuntu
