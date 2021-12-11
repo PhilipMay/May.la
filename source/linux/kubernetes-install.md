@@ -185,6 +185,7 @@ Later saw that `apt install apparmor` is enough.
 Why is the CNI plugin not installed?!
 
 ## Next Steps
+- untaint master: `kubectl taint nodes --all node-role.kubernetes.io/master-`
 - install helm: https://helm.sh/docs/intro/install/#from-apt-debianubuntu
 - install traefik: https://doc.traefik.io/traefik/getting-started/install-traefik/#use-the-helm-chart
   - `helm install traefik traefik/traefik -n traefik --create-namespace` 
