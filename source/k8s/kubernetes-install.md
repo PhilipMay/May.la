@@ -115,9 +115,7 @@ scp root@<master_ip_or_hostname>:/etc/kubernetes/admin.conf ~/.kube/config
 
 ```bash
 helm repo add projectcalico https://docs.projectcalico.org/charts
-
 helm repo update
-
 helm install calico projectcalico/tigera-operator
 ```
 
@@ -163,7 +161,19 @@ containerd seems to complain about apparmor: `error="failed to create containerd
 - untaint master: `kubectl taint nodes --all node-role.kubernetes.io/master-`
 - install helm: https://helm.sh/docs/intro/install/#from-apt-debianubuntu
 - install traefik: https://doc.traefik.io/traefik/getting-started/install-traefik/#use-the-helm-chart
-  - `helm install traefik traefik/traefik -n traefik --create-namespace` 
+
+```yaml
+service:
+  externalIPs:
+    - <the_external_ip>
+```
+
+```bash
+helm repo add traefik https://helm.traefik.io/traefik
+helm repo update
+helm install traefik traefik/traefik -n traefik --create-namespace -f traefik-helm-values.yaml
+```
+
 - expose the traefik dashboard:
   - `k port-forward <traefik_pod> 9000:9000 -n traefik --address 0.0.0.0`
   - http://<ip>:9000/dashboard/
