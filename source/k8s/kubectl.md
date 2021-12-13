@@ -5,6 +5,7 @@
 
 ## Display Resources
 - display all: `kubectl get all -A -o wide`
+- `kubectl get cs`
 
 ## Create Resources
 
