@@ -99,8 +99,14 @@ see
 - https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart#create-a-single-host-kubernetes-cluster
 ```bash
 kubeadm init --pod-network-cidr=192.168.0.0/16 --control-plane-endpoint=159.69.24.59
+```
 
-export KUBECONFIG=/etc/kubernetes/admin.conf
+- logout
+- copy config
+
+```bash
+mkdir ~/.kube
+scp root@<master_ip_or_hostname>:/etc/kubernetes/admin.conf ~/.kube/config
 ```
 
 ## Install Calico
