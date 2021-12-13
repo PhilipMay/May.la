@@ -113,6 +113,14 @@ scp root@<master_ip_or_hostname>:/etc/kubernetes/admin.conf ~/.kube/config
 - see https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises#install-calico-with-kubernetes-api-datastore-50-nodes-or-less
 - [Helm install](https://projectcalico.docs.tigera.io/getting-started/kubernetes/helm)
 
+```bash
+helm repo add projectcalico https://docs.projectcalico.org/charts
+
+helm repo update
+
+helm install calico projectcalico/tigera-operator
+```
+
 ## Fix unhealthy scheduler
 When you execute `kubectl get cs` you see that scheduler is unhealthy. This is the output:
 ```text
