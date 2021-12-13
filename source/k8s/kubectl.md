@@ -7,8 +7,8 @@
 ## Display Resources
 - all: `kubectl get all -A -o wide`
 - custom resource definitions: `kubectl get crd`
-- all ingressroutes (custom resource definition from Traefik): `kubectl get ingressroutes -A`
-- ???: `kubectl get cs`
+- ingressroutes (custom resource definition from Traefik): `kubectl get ingressroutes -A`
+- component statuses: `kubectl get cs`
 
 ## Create Resources
 
