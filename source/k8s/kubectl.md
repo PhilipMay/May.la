@@ -1,7 +1,8 @@
 # kubectl
-- [Overview of kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
+- [overview of kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)
 - [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 - [kubectl Commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+- [list of resource types](https://kubernetes.io/docs/reference/kubectl/overview/#resource-types)
 
 ## Display Resources
 - display all: `kubectl get all -A -o wide`
