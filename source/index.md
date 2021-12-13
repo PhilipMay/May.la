@@ -10,6 +10,7 @@ it
 py
 ml
 linux
+k8s
 archive
 ```
 
