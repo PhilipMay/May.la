@@ -105,12 +105,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 ## Install Calico
 - see https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises#install-calico-with-kubernetes-api-datastore-50-nodes-or-less
-
-```text
-curl https://docs.projectcalico.org/manifests/calico.yaml -O
-
-kubectl apply -f calico.yaml
-```
+- [Helm install](https://projectcalico.docs.tigera.io/getting-started/kubernetes/helm)
 
 ## Fix unhealthy scheduler
 When you execute `kubectl get cs` you see that scheduler is unhealthy. This is the output:
