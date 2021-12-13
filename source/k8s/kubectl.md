@@ -9,4 +9,4 @@
 ## Create Resources
 
 ## Special Commands
-- schedule Pods on the control-plane node: `kubectl taint nodes --all node-role.kubernetes.io/master-`
+- schedule Pods on the control-plane: `kubectl taint nodes --all node-role.kubernetes.io/master-`
