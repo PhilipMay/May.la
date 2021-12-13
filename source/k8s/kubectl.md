@@ -7,3 +7,6 @@
 - display all: `kubectl get all -A -o wide`
 
 ## Create Resources
+
+## Special Commands
+- `kubectl taint nodes --all node-role.kubernetes.io/master-`
