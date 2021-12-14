@@ -177,3 +177,6 @@ helm install traefik traefik/traefik -n traefik --create-namespace -f traefik-he
 - expose the traefik dashboard:
   - `k port-forward <traefik_pod> 9000:9000 -n traefik --address 0.0.0.0`
   - http://<ip>:9000/dashboard/
+
+- longhorn install
+  - do on all nodes: `apt-get install -y open-iscsi nfs-common`
