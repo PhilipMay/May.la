@@ -4,7 +4,7 @@
 You should disable the portmap service. You can check if it is available:
 
 ```text
-$ rpcinfo -T udp -p 116.203.93.98
+$ rpcinfo -T udp -p <ip>
    program vers proto   port  service
     100000    4   tcp    111  portmapper
     100000    3   tcp    111  portmapper
