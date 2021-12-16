@@ -11,6 +11,7 @@
 - component statuses: `kubectl get cs`
 
 ## Create Resources
+- expose deployment: `kubectl expose deploy <deployment_name> --port <port_number>` - [more](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#expose)
 
 ## Special Commands
 - ececute bash on pod: `kubectl exec --stdin --tty <pod_name> -- /bin/bash`
