@@ -13,4 +13,5 @@
 ## Create Resources
 
 ## Special Commands
+- ececute bash on pod: `kubectl exec --stdin --tty <pod_name> -- /bin/bash`
 - schedule Pods on the control-plane: `kubectl taint nodes --all node-role.kubernetes.io/master-`
