@@ -54,6 +54,16 @@ spec:
     app: nginx
 ```
 
+## Secret
+
+## PersistentVolumeClaim
+
+## IngressRoute
+- [Traefik doc: Kind: IngressRoute](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-ingressroute)
+
+## Middleware
+- [Traefik doc: Kind: Middleware](https://doc.traefik.io/traefik/routing/providers/kubernetes-crd/#kind-middleware)
+
 ## Namespace
 ```yaml
 apiVersion: v1
