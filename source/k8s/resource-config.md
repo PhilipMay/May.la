@@ -35,6 +35,8 @@ spec:
 ## Service
 - [Kubernetes doc: Service](https://kubernetes.io/docs/concepts/services-networking/service/)
 - `spec.selector.app` must reference the label(-s) of the deployment (pod)
+- `targetPort` is the port of the pod
+- `port` is the port of the service
 
 ```yaml
 apiVersion: v1
