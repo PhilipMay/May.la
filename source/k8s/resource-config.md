@@ -30,3 +30,12 @@ spec:
         ports:
         - containerPort: 80
 ```
+
+## Namespace
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-namespace
+---
+```
