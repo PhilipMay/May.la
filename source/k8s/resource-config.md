@@ -31,17 +31,17 @@ spec:
         ports:
         - containerPort: 80
 ```
-- [Kubernetes doc: Service](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 ## Service
+- [Kubernetes doc: Service](https://kubernetes.io/docs/concepts/services-networking/service/)
+- `spec.selector.app` must reference the label(-s) of the deployment
+
 ```yaml
 apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
   namespace: my-namespace
-  labels:
-    app: nginx
 spec:
   ports:
   - port: 80
