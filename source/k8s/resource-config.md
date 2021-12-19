@@ -31,6 +31,24 @@ spec:
         - containerPort: 80
 ```
 
+## Service
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: my-namespace
+  labels:
+    app: nginx
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx
+```
+
 ## Namespace
 ```yaml
 apiVersion: v1
