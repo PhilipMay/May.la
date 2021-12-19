@@ -1,6 +1,7 @@
 # Resource Configuration
 
 ## Deployment
+- [Kubernetes doc - Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 - replicas can be omitted
 - all three labels must exactly match
 - `containerPort` is for information purposes only and can be omitted
@@ -30,7 +31,7 @@ spec:
         ports:
         - containerPort: 80
 ```
-- [Kubernetes doc](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [Kubernetes doc - Service](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 ## Service
 ```yaml
