@@ -3,6 +3,8 @@
 ## Deployment
 - replicas can be omitted
 - all three labels must exactly match
+- `containerPort` is for information purposes only and can be omitted
+- replicas defaults to 1 and can be omitted 
 
 ```yaml
 apiVersion: apps/v1
