@@ -101,6 +101,12 @@ see
 kubeadm init --pod-network-cidr=192.168.0.0/16 --control-plane-endpoint=159.69.24.59
 ```
 
+If you have a multi node config with an additional internal network you have to change the internal ip. Check this with `kubectl get nodes -o wide`.
+- edit `/var/lib/kubelet/kubeadm-flags.env`
+- append `--node-ip=<your-internal-ip>`
+- reboot
+- see [Kubernetes doc: Workflow when using kubeadm init](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/#workflow-when-using-kubeadm-init) and [Stack Overflow](https://stackoverflow.com/a/57506203/271118)
+
 - logout
 - copy config
 
