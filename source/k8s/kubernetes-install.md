@@ -186,3 +186,8 @@ helm install traefik traefik/traefik -n traefik --create-namespace -f traefik-he
 
 - longhorn install
   - do on all nodes: `apt-get install -y open-iscsi nfs-common`
+
+## Join new Nodes to an existing Cluster
+- show token: `kubeadm token list`
+- create new token: `kubeadm token create`
+- print join command: `kubeadm token create --print-join-command`
