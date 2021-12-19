@@ -34,7 +34,7 @@ spec:
 
 ## Service
 - [Kubernetes doc: Service](https://kubernetes.io/docs/concepts/services-networking/service/)
-- `spec.selector.app` must reference the label(-s) of the deployment
+- `spec.selector.app` must reference the label(-s) of the deployment (pod)
 
 ```yaml
 apiVersion: v1
