@@ -30,6 +30,7 @@ spec:
         ports:
         - containerPort: 80
 ```
+- [Kubernetes doc](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 ## Service
 ```yaml
