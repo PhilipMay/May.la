@@ -2,10 +2,11 @@
 
 ## Deployment
 - [Kubernetes doc: Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-- replicas can be omitted
+- `replicas` 
+  - can be omitted
+  - defaults to 1
 - all three labels must exactly match
 - `containerPort` is for information purposes only and can be omitted
-- replicas defaults to 1 and can be omitted 
 
 ```yaml
 apiVersion: apps/v1
