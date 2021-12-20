@@ -23,3 +23,4 @@ Uninstall with: `apt-get remove rpcbind --auto-remove`
 - edit `/etc/sysctl.d/70-disable-ipv6.conf`
 - add `net.ipv6.conf.all.disable_ipv6 = 1`
 - restart: `sysctl --system`
+- check with `ifconfig` - something like `inet6 2a01:4f8:1c1c:3240::1` should not be printed
