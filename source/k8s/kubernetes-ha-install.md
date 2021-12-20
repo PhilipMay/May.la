@@ -135,6 +135,11 @@ helm install calico projectcalico/tigera-operator
 - see https://artifacthub.io/packages/helm/metrics-server/metrics-server
 - `helm install metrics-server metrics-server/metrics-server -n metrics-server --create-namespace -f metrics-server-helm-values.yaml`
 
+## Install Longhorn
+- see https://longhorn.io/docs/1.2.2/deploy/install/install-with-helm/
+- do on all nodes: `apt-get install -y open-iscsi nfs-common`
+- `helm install longhorn longhorn/longhorn --namespace longhorn-system --create-namespace`
+
 ## Network Debug
 - see open ports and more:
   - `lsof -i -P -n | grep LISTEN`
@@ -160,9 +165,6 @@ helm install traefik traefik/traefik -n traefik --create-namespace -f traefik-he
 - expose the traefik dashboard:
   - `k port-forward <traefik_pod> 9000:9000 -n traefik --address 0.0.0.0`
   - http://<ip>:9000/dashboard/
-
-- longhorn install
-  - do on all nodes: `apt-get install -y open-iscsi nfs-common`
 
 ## Join new Nodes to an existing Cluster
 - show token: `kubeadm token list`
