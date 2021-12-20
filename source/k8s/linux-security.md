@@ -17,3 +17,9 @@ $ rpcinfo -T udp -p <ip>
 Or check with `systemctl list-units --type=service`.
 
 Uninstall with: `apt-get remove rpcbind --auto-remove`
+
+## Disable IPv6
+- see https://www.itzgeek.com/how-tos/linux/debian/how-to-disable-ipv6-on-debian-9-ubuntu-16-04.html
+- edit `/etc/sysctl.d/70-disable-ipv6.conf`
+- add `net.ipv6.conf.all.disable_ipv6 = 1`
+- restart: `sysctl --system`
