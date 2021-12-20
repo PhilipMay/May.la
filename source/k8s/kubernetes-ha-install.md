@@ -92,7 +92,8 @@ apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 ```
 
-Install and start firewall
+- install and start firewall - double check internal network adapter (enp7s0 or ens10)
+- disable ipv6
 
 see 
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node
