@@ -1,4 +1,4 @@
-# Kubernetes Installation
+# Kubernetes HA Installation
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/
 - https://projectcalico.docs.tigera.io/about/about-calico
 
@@ -75,8 +75,6 @@ systemctl restart containerd
 
 - restart containerd: `systemctl restart containerd`
 
-I did a reboot here - just to be sure
-
 see https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl
 ```bash
 apt-get update
@@ -94,26 +92,33 @@ apt-get install -y kubelet kubeadm kubectl
 apt-mark hold kubelet kubeadm kubectl
 ```
 
+Install and start firewall
+
 see 
 - https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node
 - https://projectcalico.docs.tigera.io/getting-started/kubernetes/quickstart#create-a-single-host-kubernetes-cluster
 ```bash
-kubeadm init --pod-network-cidr=192.168.0.0/16 --control-plane-endpoint=159.69.24.59
+kubeadm init --control-plane-endpoint="<external-ip-of-load-balancer>:6443" --upload-certs --apiserver-advertise-address=<internal-ip> --pod-network-cidr=192.168.0.0/16
+
+# then add more master nodes with (always manualy add --apiserver-advertise-address=<internal-ip>):
+  kubeadm join <external-ip-of-load-balancer>:6443 --token <token> \
+	--discovery-token-ca-cert-hash sha256:<hash> \
+	--control-plane --certificate-key <cert-key> --apiserver-advertise-address=<internal-ip>
 ```
 
-If you have a multi node config with an additional internal network you have to change the internal ip. Check this with `kubectl get nodes -o wide`.
 - edit `/var/lib/kubelet/kubeadm-flags.env`
 - append `--node-ip=<your-internal-ip>`
 - reboot
 - see [Kubernetes doc: Workflow when using kubeadm init](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/kubelet-integration/#workflow-when-using-kubeadm-init) and [Stack Overflow](https://stackoverflow.com/a/57506203/271118)
 
-- logout
 - copy config
 
 ```bash
 mkdir ~/.kube
 scp root@<master_ip_or_hostname>:/etc/kubernetes/admin.conf ~/.kube/config
 ```
+
+- untaint master: `kubectl taint nodes --all node-role.kubernetes.io/master-`
 
 ## Install Calico
 - see https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises#install-calico-with-kubernetes-api-datastore-50-nodes-or-less
@@ -124,6 +129,11 @@ helm repo add projectcalico https://docs.projectcalico.org/charts
 helm repo update
 helm install calico projectcalico/tigera-operator
 ```
+
+## Opional: Install metrics server
+- see https://github.com/kubernetes-sigs/metrics-server
+- see https://artifacthub.io/packages/helm/metrics-server/metrics-server
+- `helm install metrics-server metrics-server/metrics-server -n metrics-server --create-namespace -f metrics-server-helm-values.yaml`
 
 ## Error when apparmor is missing
 Now I am getting this error:
