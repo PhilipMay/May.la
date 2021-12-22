@@ -57,6 +57,8 @@ apt install apparmor
 
 apt-get install containerd.io
 
+apt-mark hold containerd.io
+
 mkdir -p /etc/containerd
 
 containerd config default > /etc/containerd/config.toml
