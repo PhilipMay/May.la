@@ -9,6 +9,7 @@
 - custom resource definitions: `kubectl get crd`
 - ingressroutes (custom resource definition from Traefik): `kubectl get ingressroutes -A`
 - component statuses: `kubectl get cs`
+- list Longhorn replica: `kubectl get replica -A`
 
 ## Create Resources
 - expose deployment: `kubectl expose deploy <deployment_name> --port <port_number>` - [more](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#expose)
