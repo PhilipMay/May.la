@@ -24,3 +24,13 @@ Uninstall with: `apt-get remove rpcbind --auto-remove`
 - add `net.ipv6.conf.all.disable_ipv6 = 1`
 - restart: `sysctl --system`
 - check with `ifconfig` - something like `inet6 2a01:4f8:1c1c:3240::1` should not be printed
+
+## sshd security
+- see https://www.digitalocean.com/community/tutorials/how-to-harden-openssh-on-ubuntu-18-04
+- see https://community.hetzner.com/tutorials/securing-ssh
+
+```text
+# own settings
+PasswordAuthentication no
+PermitEmptyPasswords no
+```
