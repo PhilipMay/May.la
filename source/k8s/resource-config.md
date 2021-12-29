@@ -2,7 +2,7 @@
 
 ## Deployment
 - [Kubernetes doc: Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-- `replicas` 
+- `replicas`
   - can be omitted
   - defaults to 1
 - all three labels must exactly match
@@ -70,4 +70,18 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: my-namespace
+```
+
+# ConfigMap
+- see [NGINX example](https://gist.github.com/petitviolet/d36f33d145d0bbf4b54eb187b79d0244)
+
+## Mount a File not a Directory
+- see [Using subPath](https://kubernetes.io/docs/concepts/storage/volumes/#using-subpath)
+- see https://gist.github.com/petitviolet/d36f33d145d0bbf4b54eb187b79d0244#gistcomment-3417108
+```yaml
+          volumeMounts:
+            - name: <config_map_name>
+              mountPath: /<path>/<filename>
+              subPath: <filename>
+              readOnly: true
 ```
