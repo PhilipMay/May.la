@@ -72,10 +72,10 @@ metadata:
   name: my-namespace
 ```
 
-# ConfigMap
+## ConfigMap
 - see [NGINX example](https://gist.github.com/petitviolet/d36f33d145d0bbf4b54eb187b79d0244)
 
-## Mount a File not a Directory
+### Mount a File not a Directory
 - see [Using subPath](https://kubernetes.io/docs/concepts/storage/volumes/#using-subpath)
 - see https://gist.github.com/petitviolet/d36f33d145d0bbf4b54eb187b79d0244#gistcomment-3417108
 ```yaml
