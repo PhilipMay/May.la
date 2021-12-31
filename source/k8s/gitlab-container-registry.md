@@ -4,6 +4,7 @@
   - Predefined variables reference: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html 
 - see `.gitlab-ci.yml` template: https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/lib/gitlab/ci/templates/Docker.gitlab-ci.yml
 - my test project: https://gitlab.com/PhilipMay/docktest
+- multiple tags: https://stackoverflow.com/a/56905333/271118
 
 ## Password Handling
 ```text
