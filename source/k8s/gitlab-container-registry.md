@@ -14,3 +14,5 @@ WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
 Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 ```
+
+- fixx this with `echo $CI_DEPLOY_PASSWORD | docker login -u $CI_DEPLOY_USER --password-stdin registry.gitlab.com` - see https://stackoverflow.com/a/53415082/271118
