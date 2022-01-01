@@ -3,8 +3,11 @@
 - see GitLab CI/CD: https://docs.gitlab.com/ee/ci/index.html
   - Predefined variables reference: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html 
 - see `.gitlab-ci.yml` template: https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/lib/gitlab/ci/templates/Docker.gitlab-ci.yml
-- my test project: https://gitlab.com/PhilipMay/docktest
 - multiple tags: https://stackoverflow.com/a/56905333/271118
+
+## My Test Project
+- my test project: https://gitlab.com/PhilipMay/docktest
+- run a container: `sudo docker run registry.gitlab.com/philipmay/docktest`
 
 ## Password Handling
 ```text
@@ -16,3 +19,4 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 ```
 
 - fixx this with `echo $CI_DEPLOY_PASSWORD | docker login -u $CI_DEPLOY_USER --password-stdin registry.gitlab.com` - see https://stackoverflow.com/a/53415082/271118
+- this does not seem to work!
