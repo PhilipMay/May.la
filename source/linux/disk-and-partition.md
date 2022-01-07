@@ -15,6 +15,7 @@
 - https://wiki.archlinux.org/title/Dd
 - backup a disk (or snapshot) to a file: `dd if=/dev/<disk> bs=64K status=progress | gzip -c  > <backup_name>.img.gz`
 - backup a disk (or snapshot) to a file (with parallel gzip): `dd if=/dev/<disk> bs=64K status=progress | pigz -c  > <backup_name>.img.gz`
+- restore a backup to disk: `gunzip -c <backup_name>.img.gz | dd of=/dev/<disk>`
 
 ## LVM
 - see https://wiki.archlinux.org/title/LVM
