@@ -6,6 +6,8 @@
 
 ## fstab
 
+## Partitioning
+
 ## dd
 - https://wiki.archlinux.org/title/Dd
 
