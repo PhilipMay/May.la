@@ -2,6 +2,7 @@
 
 ## Useful Commands
 - get disk UUID (for fstab): `blkid`
+- file check: `e2fsck -vf /dev/<disk>`
 
 ## fstab
 
