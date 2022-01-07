@@ -6,6 +6,9 @@
 
 ## fstab
 
+## Mount
+- mount disk: `mount /dev/sdb1 /mnt`
+
 ## Partitioning
 
 ## dd
