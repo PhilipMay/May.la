@@ -43,7 +43,9 @@
 - delete snapshot: `lvremove <volume_group_name>/<snapshot_name>`
 
 #### Recover from Image of Snapshot
-- create snapshot of disk to recover - that snapshot must be a bit larget than the disk
+- create snapshot of disk to recover 
+  - that snapshot must be a bit larget than the disk
+  - if it is smaller or same size this might happen at merge time: `Unable to merge invalidated snapshot LV vg1/restore_test`
 - use `dd` to copy image to snapshot
 - merge snapshot
 
