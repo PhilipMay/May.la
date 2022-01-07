@@ -54,3 +54,7 @@
 - https://wiki.archlinux.org/title/Resizing_LVM-on-LUKS
 - add size and resize filesystem in one command: `lvresize -L +<additional_size>G --resizefs <volume_group_name>/<logical_volume_name>`
 - set new size and resize filesystem in one command: `lvresize -L <additional_size>G --resizefs <volume_group_name>/<logical_volume_name>`
+- change size in two steps:
+  - add size logical volume: `lvresize -L +<size>G <volume_group_name>/<logical_volume_name>`
+  - set new size of logical volume: `lvresize -L <size>G <volume_group_name>/<logical_volume_name>`
+  - resize filesystem: `resize2fs /dev/<volume_group_name>/<logical_volume_name>`
