@@ -14,6 +14,7 @@
 - see https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS
 
 ### Creation Commands
+- create the pv and the vg in a primary partition and not a bare disk
 - create physical volume: `pvcreate /dev/<partition>`
 - create volume group: `vgcreate <volume_group_name> /dev/<partition>` (same `<partition>` as for the physical volume)
 - create logical volume with fixed size: `lvcreate -L <size>G <volume_group_name> -n <logical_volume_name>`
