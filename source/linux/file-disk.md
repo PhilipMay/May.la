@@ -29,3 +29,8 @@ sort <file> | uniq -u > <new_file>
 ```bash
 shred -vn 1 /dev/<device>
 ```
+
+## Checksums
+- calculate checksum: `sha512sum <file>`
+- store checksums for multiple files: `sha512sum * > sha512sum.txt`
+- check checksums for multiple files: `sha512sum -c sha512sum.txt`
