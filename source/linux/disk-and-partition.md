@@ -37,6 +37,7 @@
 - https://wiki.archlinux.org/title/LVM#Snapshots
 - create snapshot: `lvcreate --size <size>G --snapshot --name <snapshot_name> /dev/<volume_group_name>/<logical_volume_name>`
 - revert to state of snapshot: `lvconvert --merge /dev/<volume_group_name>/<logical_volume_name>`
+- delete snapshot: `lvremove <volume_group_name>/<snapshot_name>`
 
 ### Resizing
 - https://wiki.archlinux.org/title/LVM#Resize_physical_volume
