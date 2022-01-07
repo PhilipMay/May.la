@@ -42,6 +42,11 @@
 - revert to state of snapshot: `lvconvert --merge /dev/<volume_group_name>/<logical_volume_name>`
 - delete snapshot: `lvremove <volume_group_name>/<snapshot_name>`
 
+#### Recover from Image of Snapshot
+- create snapshot of disk to recover - that snapshot must be a bit larget than the disk
+- use `dd` to copy image to snapshot
+- merge snapshot
+
 ### Resizing
 - https://wiki.archlinux.org/title/LVM#Resize_physical_volume
 - https://wiki.archlinux.org/title/Resizing_LVM-on-LUKS
