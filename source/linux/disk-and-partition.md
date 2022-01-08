@@ -46,7 +46,7 @@
 - create snapshot of disk to recover 
   - that snapshot must be a bit larget than the disk
   - if it is smaller or same size this might happen at merge time: `Unable to merge invalidated snapshot LV vg1/restore_test`
-  - "[...] a small amount of the space you allocate to the snapshot is used to track the locations of the chunks of data, so you should allocate slightly more space than you actually need [...]" - see https://linux.die.net/man/
+  - "[...] a small amount of the space you allocate to the snapshot is used to track the locations of the chunks of data, so you should allocate slightly more space than you actually need [...]" - see https://linux.die.net/man/8/lvcreate
 - use `dd` to copy image to snapshot
 - merge snapshot
 
