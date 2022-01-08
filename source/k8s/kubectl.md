@@ -19,5 +19,6 @@
 
 ## Special Commands
 - ececute bash on pod: `kubectl exec --stdin --tty <pod_name> -- /bin/bash`
+- stop / start a pod: `kubectl scale --replicas=<0/1> <deployment_name>`
 - schedule Pods on the control-plane: `kubectl taint nodes --all node-role.kubernetes.io/master-`
 - write yaml for kubectl command to file: `kubectl <command> --dry-run=client -o yaml > <file>.yaml`
