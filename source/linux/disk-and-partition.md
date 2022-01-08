@@ -4,10 +4,9 @@
 - get disk UUID (for fstab): `blkid`
 - file check: `e2fsck -vf /dev/<disk>`
 
-## fstab
-
 ## Mount
 - mount disk: `mount /dev/sdb1 /mnt`
+- mount everything defined in `/etc/fstab`: `mount -a`
 
 ## Partitioning
 
@@ -59,3 +58,8 @@
   - add size logical volume: `lvresize -L +<size>G <volume_group_name>/<logical_volume_name>`
   - set new size of logical volume: `lvresize -L <size>G <volume_group_name>/<logical_volume_name>`
   - resize filesystem: `resize2fs /dev/<volume_group_name>/<logical_volume_name>`
+
+## Other Dosk Tools
+- see disk activity
+  - Debian: `apt-get install iotop`
+  - command: `iotop -o`
