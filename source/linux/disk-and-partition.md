@@ -62,4 +62,4 @@
 ## Other Dosk Tools
 - see disk activity
   - Debian: `apt-get install iotop`
-  - command: `iotop -o`
+  - command: `iotop -o -P -d 2`
