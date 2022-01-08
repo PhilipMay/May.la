@@ -63,3 +63,4 @@
 - see disk activity
   - Debian: `apt-get install iotop`
   - command: `iotop -o -P -d 2`
+- remove Kubernetes filesystems from `df`: `df -x overlay -x tmpfs -h`
