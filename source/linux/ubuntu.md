@@ -5,6 +5,7 @@
 - list installed packages: `apt list --installed`
 - list manually installed packages: `apt-mark showmanual`
 - remove package with dependencies: `apt-get remove --auto-remove <package_name>`
+- list installed packages from a specific source: `aptitude search "?origin (<package_source>) ?installed"`
 
 ### Update the System
 ``` bash
