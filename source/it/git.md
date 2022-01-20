@@ -43,6 +43,7 @@ stash@{2}: WIP on master: 21d80a5 Add number to log
 ## Special Commands
 - show history of last ref updates: `git reflog`
 - list tracked repositories: `git remote -v`
+- signoff last (5) commits: `git rebase --signoff HEAD~5` - see https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---signoff
 
 ## Undo things
 - unstage files staged with git add: `git reset`
@@ -155,6 +156,3 @@ changed.
   - create `~/.gitignore_global` file with ignore settings
   - execute `git config --global core.excludesfile ~/.gitignore_global`
   - also see: <https://jayeshkawli.ghost.io/using-global-gitignore-on-mac/>
-- signoff - see https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--s
-  - global: `git config --global format.signoff true`
-  - local: `git config format.signoff true`
