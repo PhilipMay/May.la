@@ -155,3 +155,6 @@ changed.
   - create `~/.gitignore_global` file with ignore settings
   - execute `git config --global core.excludesfile ~/.gitignore_global`
   - also see: <https://jayeshkawli.ghost.io/using-global-gitignore-on-mac/>
+- signoff - see https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--s
+  - global: `git config --global format.signoff true`
+  - local: `git config format.signoff true`
