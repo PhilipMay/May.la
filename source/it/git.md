@@ -147,6 +147,7 @@ works afterwards. The “dirty” commit history of the PR will also be
 changed.
 
 ## Configuration
+- always rebase on pull (is is best practice): ` git config --global pull.rebase true `
 - remember username and password: `git config --global credential.helper store`
 - set username:
 - set username
