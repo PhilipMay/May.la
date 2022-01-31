@@ -34,7 +34,7 @@
 
 ## Create User / Database
 - `CREATE USER <username> WITH PASSWORD '<password>';` - https://www.postgresql.org/docs/8.0/sql-createuser.html
-- https://www.postgresql.org/docs/9.0/sql-createdatabase.html
+- `CREATE DATABASE <db_name> OWNER <username>;` - https://www.postgresql.org/docs/9.0/sql-createdatabase.html
 
 ## Links
 - alter databases:
