@@ -24,7 +24,7 @@
 
 ## Commands (psql)
 - connect: `psql -h <host_or_ip> -p <port> -d <database> -U <username>`
-- set pssword: `\password <role_name>`
+- set password: `\password <role_name>`
 - list user (roles): `\du`
 - list user (roles) with passwords to check if they are set: `select *
   from pg_shadow;`
