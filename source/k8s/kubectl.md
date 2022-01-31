@@ -22,3 +22,4 @@
 - stop / start a pod: `kubectl scale --replicas=<0/1> <deployment_name>`
 - schedule Pods on the control-plane: `kubectl taint nodes --all node-role.kubernetes.io/master-`
 - write yaml for kubectl command to file: `kubectl <command> --dry-run=client -o yaml > <file>.yaml`
+- convert config file to configmap: `kubectl create configmap <config_map_name> --from-file=<config_file_name> --dry-run=client -o yaml > <filename>.yaml`
