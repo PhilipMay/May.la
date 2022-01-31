@@ -33,9 +33,8 @@
 - delete role: `DROP ROLE <role_name>;`
 
 ## Create User / Database
-- https://www.postgresql.org/docs/8.0/sql-createuser.html
+- `CREATE USER <username> WITH PASSWORD '<password>';` - https://www.postgresql.org/docs/8.0/sql-createuser.html
 - https://www.postgresql.org/docs/9.0/sql-createdatabase.html
-- set pssword: `\password <role_name>`
 
 ## Links
 - alter databases:
