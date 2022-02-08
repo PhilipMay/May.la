@@ -7,3 +7,6 @@
 ## List Services
 - list enabled services: `systemctl list-unit-files --state=enabled`
 - list running Services: `systemctl list-units --type=service`
+
+## Journal
+- delete old journal files (ony keep last 2 days): `journalctl --vacuum-time=2d`
