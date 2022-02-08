@@ -9,9 +9,6 @@
 - delete a user with home dir and mail spool: `userdel -r <username>`
 - also see: <https://wiki.archlinux.org/index.php/users_and_groups#Other_examples_of_user_management>
 
-## Journal
-- delete old journal files (ony keep last 2 days): `journalctl --vacuum-time=2d`
-
 ## Hardware
 - get info about GPU: `lshw -C display`
 - get infos about CPU: `cat /proc/cpuinfo`
